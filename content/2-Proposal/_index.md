@@ -73,7 +73,6 @@ The AI flow is processed through the backend service. Medical data is retrieved 
 
 ![MedChain AI AWS Architecture](/images/2-Proposal/architecture.png)
 
-![MedChain AI Medical Record, AI, Blockchain and Payment Flow](/images/2-Proposal/architecture-1.png)
 
 #### AWS Services Used
 

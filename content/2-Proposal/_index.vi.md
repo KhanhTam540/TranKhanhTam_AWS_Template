@@ -73,7 +73,6 @@ Luồng AI được xử lý thông qua backend service. Dữ liệu y tế đư
 
 ![MedChain AI AWS Architecture](/images/2-Proposal/architecture.png)
 
-![MedChain AI Medical Record, AI, Blockchain and Payment Flow](/images/2-Proposal/architecture-1.png)
 
 #### Dịch vụ AWS sử dụng
 
