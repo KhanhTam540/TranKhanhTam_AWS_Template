@@ -1,25 +1,25 @@
----
-title : "Invalidate CloudFront và mở website"
+﻿---
+title : "Invalidate CloudFront vÃ  má»Ÿ website"
 date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.7.3. </b> "
 ---
 
-#### Mục tiêu
+#### Má»¥c tiÃªu
 
-Refresh CloudFront cache và mở website đã deploy.
+Refresh CloudFront cache vÃ  má»Ÿ website Ä‘Ã£ deploy.
 
-#### Cách A - AWS Console
+#### CÃ¡ch A - AWS Console
 
-1. Mở **CloudFront**.
-2. Chọn distribution.
-3. Tạo invalidation cho `/*`.
-4. Mở distribution domain.
+1. Má»Ÿ **CloudFront**.
+2. Chá»n distribution.
+3. Táº¡o invalidation cho `/*`.
+4. Má»Ÿ distribution domain.
 
-![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
+![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
 
-#### Cách B - Lệnh / code deployment
+#### CÃ¡ch B - Lá»‡nh / code deployment
 
 ```powershell
 $DistributionId = aws cloudformation describe-stacks --stack-name $StackName --region $Region --profile $Profile --query "Stacks[0].Outputs[?contains(OutputKey,'DistributionId')].OutputValue | [0]" --output text
@@ -27,6 +27,7 @@ $Invalidation = aws cloudfront create-invalidation --distribution-id $Distributi
 aws cloudfront wait invalidation-completed --distribution-id $DistributionId --id $Invalidation.Invalidation.Id --profile $Profile
 ```
 
-#### Kiểm tra
+#### Kiá»ƒm tra
 
-Trình duyệt cần hiển thị trang chủ MedChain AI.
+TrÃ¬nh duyá»‡t cáº§n hiá»ƒn thá»‹ trang chá»§ MedChain AI.
+

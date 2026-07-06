@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 10 Worklog"
 date: 2026-06-22
 weight: 2
@@ -37,3 +37,4 @@ pre: " <b> 1.10. </b> "
 * Published the frontend through S3 and CloudFront.
 
 * Created the first dataset for system testing.
+

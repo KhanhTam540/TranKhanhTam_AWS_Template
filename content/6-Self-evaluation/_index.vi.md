@@ -1,5 +1,5 @@
----
-title: "Tự đánh giá"
+﻿---
+title: "Tá»± Ä‘Ã¡nh giÃ¡"
 date: 2026-07-05
 weight: 6
 chapter: false
@@ -7,30 +7,30 @@ pre: " <b> 6. </b> "
 ---
 
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **17/04/2026** đến **10/07/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia thực hiện dự án MedChain AI, qua đó cải thiện kỹ năng lập trình, phân tích hệ thống, triển khai AWS, viết báo cáo và làm việc nhóm.
+Trong suá»‘t thá»i gian thá»±c táº­p táº¡i **CÃ´ng ty TNHH Amazon Web Services Viet Nam** tá»« **17/04/2026** Ä‘áº¿n **10/07/2026**, tÃ´i Ä‘Ã£ cÃ³ cÆ¡ há»™i há»c há»i, rÃ¨n luyá»‡n vÃ  Ã¡p dá»¥ng kiáº¿n thá»©c Ä‘Ã£ Ä‘Æ°á»£c trang bá»‹ táº¡i trÆ°á»ng vÃ o mÃ´i trÆ°á»ng lÃ m viá»‡c thá»±c táº¿.  
+TÃ´i Ä‘Ã£ tham gia thá»±c hiá»‡n dá»± Ã¡n MedChain AI, qua Ä‘Ã³ cáº£i thiá»‡n ká»¹ nÄƒng láº­p trÃ¬nh, phÃ¢n tÃ­ch há»‡ thá»‘ng, triá»ƒn khai AWS, viáº¿t bÃ¡o cÃ¡o vÃ  lÃ m viá»‡c nhÃ³m.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Vá» tÃ¡c phong, tÃ´i luÃ´n cá»‘ gáº¯ng hoÃ n thÃ nh tá»‘t nhiá»‡m vá»¥, tuÃ¢n thá»§ ná»™i quy, vÃ  tÃ­ch cá»±c trao Ä‘á»•i vá»›i Ä‘á»“ng nghiá»‡p Ä‘á»ƒ nÃ¢ng cao hiá»‡u quáº£ cÃ´ng viá»‡c.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Äá»ƒ pháº£n Ã¡nh má»™t cÃ¡ch khÃ¡ch quan quÃ¡ trÃ¬nh thá»±c táº­p, tÃ´i xin tá»± Ä‘Ã¡nh giÃ¡ báº£n thÃ¢n dá»±a trÃªn cÃ¡c tiÃªu chÃ­ dÆ°á»›i Ä‘Ã¢y:
 
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
+| STT | TiÃªu chÃ­                            | MÃ´ táº£                                                                                            | Tá»‘t | KhÃ¡ | Trung bÃ¬nh |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ☐ |✅  | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ✅ | ☐   | ☐             |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐  | ✅| ☐         |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                       | ☐    | ✅| ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                       | ☐   | ✅ | ☐          |
+| 1   | **Kiáº¿n thá»©c vÃ  ká»¹ nÄƒng chuyÃªn mÃ´n** | Hiá»ƒu biáº¿t vá» ngÃ nh, Ã¡p dá»¥ng kiáº¿n thá»©c vÃ o thá»±c táº¿, ká»¹ nÄƒng sá»­ dá»¥ng cÃ´ng cá»¥, cháº¥t lÆ°á»£ng cÃ´ng viá»‡c | â˜ |âœ…  | â˜          |
+| 2   | **Kháº£ nÄƒng há»c há»i**                | Tiáº¿p thu kiáº¿n thá»©c má»›i, há»c há»i nhanh                                                            | â˜   | âœ…   | â˜          |
+| 3   | **Chá»§ Ä‘á»™ng**                        | Tá»± tÃ¬m hiá»ƒu, nháº­n nhiá»‡m vá»¥ mÃ  khÃ´ng chá» chá»‰ dáº«n                                                  | âœ…   | â˜   | â˜          |
+| 4   | **Tinh tháº§n trÃ¡ch nhiá»‡m**           | HoÃ n thÃ nh cÃ´ng viá»‡c Ä‘Ãºng háº¡n, Ä‘áº£m báº£o cháº¥t lÆ°á»£ng                                                | âœ…   | â˜   | â˜          |
+| 5   | **Ká»· luáº­t**                         | TuÃ¢n thá»§ giá» giáº¥c, ná»™i quy, quy trÃ¬nh lÃ m viá»‡c                                                   | âœ… | â˜   | â˜             |
+| 6   | **TÃ­nh cáº§u tiáº¿n**                   | Sáºµn sÃ ng nháº­n feedback vÃ  cáº£i thiá»‡n báº£n thÃ¢n                                                     | â˜   | âœ…   | â˜          |
+| 7   | **Giao tiáº¿p**                       | TrÃ¬nh bÃ y Ã½ tÆ°á»Ÿng, bÃ¡o cÃ¡o cÃ´ng viá»‡c rÃµ rÃ ng                                                     | â˜  | âœ…| â˜         |
+| 8   | **Há»£p tÃ¡c nhÃ³m**                    | LÃ m viá»‡c hiá»‡u quáº£ vá»›i Ä‘á»“ng nghiá»‡p, tham gia nhÃ³m                                                 | âœ…   | â˜   | â˜          |
+| 9   | **á»¨ng xá»­ chuyÃªn nghiá»‡p**            | TÃ´n trá»ng Ä‘á»“ng nghiá»‡p, Ä‘á»‘i tÃ¡c, mÃ´i trÆ°á»ng lÃ m viá»‡c                                              | âœ…   | â˜   | â˜          |
+| 10  | **TÆ° duy giáº£i quyáº¿t váº¥n Ä‘á»**        | Nháº­n diá»‡n váº¥n Ä‘á», Ä‘á» xuáº¥t giáº£i phÃ¡p, sÃ¡ng táº¡o                                                    | â˜   | âœ…   | â˜          |
+| 11  | **ÄÃ³ng gÃ³p vÃ o dá»± Ã¡n/tá»• chá»©c**      | Hiá»‡u quáº£ cÃ´ng viá»‡c, sÃ¡ng kiáº¿n cáº£i tiáº¿n, ghi nháº­n tá»« team                                       | â˜    | âœ…| â˜          |
+| 12  | **Tá»•ng thá»ƒ**                        | ÄÃ¡nh giÃ¡ chung vá» toÃ n bá»™ quÃ¡ trÃ¬nh thá»±c táº­p                                                       | â˜   | âœ… | â˜          |
 
-### Cần cải thiện
+### Cáº§n cáº£i thiá»‡n
 
-* Học cách giao tiếp tốt hơn, tự tin hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
-* Cần học cách giải quyết vấn đề theo nhiều cách khác nhau
+* Há»c cÃ¡ch giao tiáº¿p tá»‘t hÆ¡n, tá»± tin hÆ¡n trong giao tiáº¿p háº±ng ngÃ y vÃ  trong cÃ´ng viá»‡c, xá»­ lÃ½ tÃ¬nh huá»‘ng
+* Cáº§n há»c cÃ¡ch giáº£i quyáº¿t váº¥n Ä‘á» theo nhiá»u cÃ¡ch khÃ¡c nhau

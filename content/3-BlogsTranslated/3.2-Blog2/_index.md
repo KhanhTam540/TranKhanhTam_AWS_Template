@@ -1,4 +1,4 @@
----
+﻿---
 title: "Blog 2"
 date: 2026-07-05
 weight: 2
@@ -13,7 +13,7 @@ In modern digital applications, authentication is one of the most important part
 
 Many applications use multi-factor authentication, also known as MFA, to improve security. MFA can include SMS OTP, email OTP, authenticator apps, biometrics, passkeys, or hardware security keys. Although MFA increases protection, forcing users to complete MFA for every login or every action may create a poor user experience.
 
-The AWS blog article **“Creating great authentication experiences with Amazon Cognito and Authsignal”** explains how Amazon Cognito and Authsignal can work together to create better authentication experiences. The main idea is to balance security and usability by using adaptive authentication, risk signals, continuous authentication, and flexible authentication methods.
+The AWS blog article **â€œCreating great authentication experiences with Amazon Cognito and Authsignalâ€** explains how Amazon Cognito and Authsignal can work together to create better authentication experiences. The main idea is to balance security and usability by using adaptive authentication, risk signals, continuous authentication, and flexible authentication methods.
 
 Instead of applying the same authentication requirement to every user and every situation, the system can evaluate risk and apply the right level of authentication at the right time.
 
@@ -50,11 +50,11 @@ A simplified example:
 ```text
 Low-risk login:
 Known device + usual location + normal behavior
-→ Allow access with low friction
+â†’ Allow access with low friction
 
 High-risk login:
 Unknown device + unusual location + abnormal behavior
-→ Require additional authentication
+â†’ Require additional authentication
 ```
 
 This approach improves both security and user experience. Low-risk users are not interrupted unnecessarily, while high-risk situations receive stronger protection.
@@ -103,19 +103,19 @@ Examples:
 
 ```text
 Viewing general account information
-→ No additional authentication required
+â†’ No additional authentication required
 
 Changing password
-→ Require MFA or passkey verification
+â†’ Require MFA or passkey verification
 
 Adding a new payment method
-→ Require additional authentication
+â†’ Require additional authentication
 
 Accessing sensitive data
-→ Require stronger authentication
+â†’ Require stronger authentication
 
 Making a high-value transaction
-→ Require step-up authentication
+â†’ Require step-up authentication
 ```
 
 This model improves security because the system can protect important actions even if the user has already signed in. It also improves user experience because the user is not challenged unnecessarily for every action.
@@ -140,16 +140,16 @@ For example, an administrator may create rules such as:
 
 ```text
 If the user logs in from a new device
-→ Require MFA
+â†’ Require MFA
 
 If the transaction amount is above a defined threshold
-→ Require stronger authentication
+â†’ Require stronger authentication
 
 If the user changes password
-→ Require step-up authentication
+â†’ Require step-up authentication
 
 If the user uses a trusted device and low-risk location
-→ Allow low-friction access
+â†’ Allow low-friction access
 ```
 
 This gives non-technical teams more flexibility because they can adjust security rules without requiring developers to change code every time.
@@ -164,11 +164,11 @@ A simplified flow can be described as:
 
 ```text
 User action
-→ Amazon Cognito handles identity and user session
-→ Authsignal evaluates risk and business rules
-→ The system decides the required authentication method
-→ User completes the required verification if needed
-→ Application allows or denies the action
+â†’ Amazon Cognito handles identity and user session
+â†’ Authsignal evaluates risk and business rules
+â†’ The system decides the required authentication method
+â†’ User completes the required verification if needed
+â†’ Application allows or denies the action
 ```
 
 Amazon Cognito manages the user identity layer, while Authsignal adds adaptive decision-making and authentication orchestration. This makes it possible to create a better balance between account security and user convenience.
@@ -197,7 +197,7 @@ The article highlights that authentication should not be static. Organizations s
 
 For example, a business may choose WhatsApp OTP in some regions to reduce cost or improve delivery reliability. For high-risk actions, the system may require stronger methods such as passkeys, biometrics, or hardware keys.
 
-![Blog 2](/images/3-Blog/Blog-2.png)
+![Blog 2](/TranKhanhTam_AWS_Template/images/3-Blog/Blog-2.png)
 
 ## 9. Benefits of adaptive and continuous authentication
 

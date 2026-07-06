@@ -1,4 +1,4 @@
----
+﻿---
 title : "Create CDK bootstrap resources"
 date : 2024-01-01
 weight : 3
@@ -17,7 +17,7 @@ Create the CDK bootstrap stack and artifact bucket before deploying the applicat
 2. Check whether `CDKToolkit` exists.
 3. Open **S3** and check the CDK asset bucket after bootstrap.
 
-![CDKToolkit console](/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk.png)
+![CDKToolkit console](/TranKhanhTam_AWS_Template/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk.png)
 
 #### Method B - Command / code deployment
 
@@ -28,7 +28,7 @@ npm --prefix web install
 npx cdk bootstrap aws://$AccountId/$Region --profile $Profile
 ```
 
-![CDK bootstrap command](/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk-bootstrap-command.png)
+![CDK bootstrap command](/TranKhanhTam_AWS_Template/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk-bootstrap-command.png)
 
 #### Validation
 
@@ -40,3 +40,4 @@ aws cloudformation describe-stacks `
   --query "Stacks[0].StackStatus" `
   --output text
 ```
+

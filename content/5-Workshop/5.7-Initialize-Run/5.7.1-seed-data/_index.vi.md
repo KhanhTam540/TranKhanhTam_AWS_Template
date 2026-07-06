@@ -1,26 +1,26 @@
----
-title : "Seed dữ liệu ứng dụng"
+﻿---
+title : "Seed dá»¯ liá»‡u á»©ng dá»¥ng"
 date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.7.1. </b> "
 ---
 
-#### Mục tiêu
+#### Má»¥c tiÃªu
 
-Seed demo users và dữ liệu bệnh viện sau khi Cognito và DynamoDB đã tồn tại.
+Seed demo users vÃ  dá»¯ liá»‡u bá»‡nh viá»‡n sau khi Cognito vÃ  DynamoDB Ä‘Ã£ tá»“n táº¡i.
 
-#### Cách A - AWS Console
+#### CÃ¡ch A - AWS Console
 
-1. Mở **DynamoDB** và thêm sample records thủ công nếu cần.
-2. Mở **Cognito** và tạo demo users thủ công nếu cần.
-3. Kiểm tra roles và sample data đã có.
+1. Má»Ÿ **DynamoDB** vÃ  thÃªm sample records thá»§ cÃ´ng náº¿u cáº§n.
+2. Má»Ÿ **Cognito** vÃ  táº¡o demo users thá»§ cÃ´ng náº¿u cáº§n.
+3. Kiá»ƒm tra roles vÃ  sample data Ä‘Ã£ cÃ³.
 
-![Stack outputs](/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/dynamodb.png)
-![Stack outputs](/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/cognito.png)
-![Stack outputs](/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/cognito_1.png)
+![Stack outputs](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/dynamodb.png)
+![Stack outputs](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/cognito.png)
+![Stack outputs](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.2-verify-resources/cognito_1.png)
 
-#### Cách B - Lệnh / code deployment
+#### CÃ¡ch B - Lá»‡nh / code deployment
 
 ```powershell
 $DatasetRoot = "D:\AWS\Project\Hospital_Dataset_Reset_V2_1"
@@ -35,6 +35,7 @@ cd $DatasetRoot
   -Confirmation "RESET-HOSPITAL-DATA"
 ```
 
-#### Kiểm tra
+#### Kiá»ƒm tra
 
-DynamoDB cần có demo patients, doctors, appointments và invoices.
+DynamoDB cáº§n cÃ³ demo patients, doctors, appointments vÃ  invoices.
+

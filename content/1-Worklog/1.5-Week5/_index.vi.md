@@ -1,5 +1,5 @@
----
-title: "Worklog Tuần 5"
+﻿---
+title: "Worklog Tuáº§n 5"
 date: 2026-05-18
 weight: 1
 chapter: false
@@ -8,29 +8,29 @@ pre: " <b> 1.5. </b> "
 
 
 
-### Mục tiêu tuần 5:
+### Má»¥c tiÃªu tuáº§n 5:
 
-* Hiểu rõ lý thuyết nền tảng và cách sử dụng cơ bản các dịch vụ tính toán không máy chủ (Serverless), quản trị hệ thống tập trung và mô hình định nghĩa hạ tầng bằng mã nguồn (IaC).
+* Hiá»ƒu rÃµ lÃ½ thuyáº¿t ná»n táº£ng vÃ  cÃ¡ch sá»­ dá»¥ng cÆ¡ báº£n cÃ¡c dá»‹ch vá»¥ tÃ­nh toÃ¡n khÃ´ng mÃ¡y chá»§ (Serverless), quáº£n trá»‹ há»‡ thá»‘ng táº­p trung vÃ  mÃ´ hÃ¬nh Ä‘á»‹nh nghÄ©a háº¡ táº§ng báº±ng mÃ£ nguá»“n (IaC).
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+### CÃ¡c cÃ´ng viá»‡c cáº§n triá»ƒn khai trong tuáº§n nÃ y:
+| Thá»© | CÃ´ng viá»‡c                                                                                                                                                                                   | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | Nguá»“n tÃ i liá»‡u                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tìm hiểu lý thuyết nền tảng về điện toán không máy chủ và làm quen cơ bản với AWS Lambda. <br> - Thực hành: Khởi tạo các hàm Lambda đơn giản, cấu hình nguồn kích hoạt tự động (Triggers) và viết logic xử lý cơ bản                                                                                        | 18/05/2026   | 18/05/2026      |<https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Tìm hiểu lý thuyết và làm quen với việc quản trị máy chủ tập trung qua AWS Systems Manager (SSM) và Session Manager.<br> - Thực hành: Cấp quyền quản trị cơ bản, thử nghiệm kết nối Terminal an toàn qua trình duyệt không cần mở cổng mạng và lưu trữ cấu hình bằng Parameter Store.                                          | 19/05/2026   | 19/05/2026       | <https://cloudjourney.awsstudygroup.com/> |
-| 4  | - Tìm hiểu các khái niệm và thành phần cốt lõi của mô hình định nghĩa hạ tầng bằng mã nguồn (AWS CDK Essentials).<br>- Thực hành: Khởi tạo cấu trúc một dự án CDK tiêu chuẩn, thiết lập môi trường lập trình tại chỗ và làm quen với việc triển khai thử nghiệm các tài nguyên đám mây bằng code.     |  20/05/2026   | 20/05/2026     | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Nghiên cứu sâu hơn về cấu trúc AWS CDK nâng cao (AWS CDK Advanced) và cơ chế phân phối luồng ứng dụng qua Amazon API Gateway. <br>- Thực hành: Viết mã nguồn CDK để định nghĩa cấu hình mạng API Gateway cơ bản và kết nối thử nghiệm luồng request xuống các hàm Lambda ngầm định.              | 21/05/2026   | 21/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Tổng kết kỹ thuật: Tổng hợp lại hệ thống kiến thức lý thuyết đã tiếp cận trong tuần.                                                       | 22/05/2026   | 22/05/206      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - TÃ¬m hiá»ƒu lÃ½ thuyáº¿t ná»n táº£ng vá» Ä‘iá»‡n toÃ¡n khÃ´ng mÃ¡y chá»§ vÃ  lÃ m quen cÆ¡ báº£n vá»›i AWS Lambda. <br> - Thá»±c hÃ nh: Khá»Ÿi táº¡o cÃ¡c hÃ m Lambda Ä‘Æ¡n giáº£n, cáº¥u hÃ¬nh nguá»“n kÃ­ch hoáº¡t tá»± Ä‘á»™ng (Triggers) vÃ  viáº¿t logic xá»­ lÃ½ cÆ¡ báº£n                                                                                        | 18/05/2026   | 18/05/2026      |<https://cloudjourney.awsstudygroup.com/> |
+| 3   | - TÃ¬m hiá»ƒu lÃ½ thuyáº¿t vÃ  lÃ m quen vá»›i viá»‡c quáº£n trá»‹ mÃ¡y chá»§ táº­p trung qua AWS Systems Manager (SSM) vÃ  Session Manager.<br> - Thá»±c hÃ nh: Cáº¥p quyá»n quáº£n trá»‹ cÆ¡ báº£n, thá»­ nghiá»‡m káº¿t ná»‘i Terminal an toÃ n qua trÃ¬nh duyá»‡t khÃ´ng cáº§n má»Ÿ cá»•ng máº¡ng vÃ  lÆ°u trá»¯ cáº¥u hÃ¬nh báº±ng Parameter Store.                                          | 19/05/2026   | 19/05/2026       | <https://cloudjourney.awsstudygroup.com/> |
+| 4  | - TÃ¬m hiá»ƒu cÃ¡c khÃ¡i niá»‡m vÃ  thÃ nh pháº§n cá»‘t lÃµi cá»§a mÃ´ hÃ¬nh Ä‘á»‹nh nghÄ©a háº¡ táº§ng báº±ng mÃ£ nguá»“n (AWS CDK Essentials).<br>- Thá»±c hÃ nh: Khá»Ÿi táº¡o cáº¥u trÃºc má»™t dá»± Ã¡n CDK tiÃªu chuáº©n, thiáº¿t láº­p mÃ´i trÆ°á»ng láº­p trÃ¬nh táº¡i chá»— vÃ  lÃ m quen vá»›i viá»‡c triá»ƒn khai thá»­ nghiá»‡m cÃ¡c tÃ i nguyÃªn Ä‘Ã¡m mÃ¢y báº±ng code.     |  20/05/2026   | 20/05/2026     | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - NghiÃªn cá»©u sÃ¢u hÆ¡n vá» cáº¥u trÃºc AWS CDK nÃ¢ng cao (AWS CDK Advanced) vÃ  cÆ¡ cháº¿ phÃ¢n phá»‘i luá»“ng á»©ng dá»¥ng qua Amazon API Gateway. <br>- Thá»±c hÃ nh: Viáº¿t mÃ£ nguá»“n CDK Ä‘á»ƒ Ä‘á»‹nh nghÄ©a cáº¥u hÃ¬nh máº¡ng API Gateway cÆ¡ báº£n vÃ  káº¿t ná»‘i thá»­ nghiá»‡m luá»“ng request xuá»‘ng cÃ¡c hÃ m Lambda ngáº§m Ä‘á»‹nh.              | 21/05/2026   | 21/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tá»•ng káº¿t ká»¹ thuáº­t: Tá»•ng há»£p láº¡i há»‡ thá»‘ng kiáº¿n thá»©c lÃ½ thuyáº¿t Ä‘Ã£ tiáº¿p cáº­n trong tuáº§n.                                                       | 22/05/2026   | 22/05/206      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Kết quả đạt được tuần 5:
+### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c tuáº§n 5:
 
 
-* Nắm vững nền tảng lý thuyết và cơ chế hoạt động cốt lõi của các mô hình công nghệ đám mây hiện đại bao gồm: kiến trúc không máy chủ (Serverless), hệ thống quản lý máy chủ tập trung và giải pháp hạ tầng dạng mã nguồn (IaC).
+* Náº¯m vá»¯ng ná»n táº£ng lÃ½ thuyáº¿t vÃ  cÆ¡ cháº¿ hoáº¡t Ä‘á»™ng cá»‘t lÃµi cá»§a cÃ¡c mÃ´ hÃ¬nh cÃ´ng nghá»‡ Ä‘Ã¡m mÃ¢y hiá»‡n Ä‘áº¡i bao gá»“m: kiáº¿n trÃºc khÃ´ng mÃ¡y chá»§ (Serverless), há»‡ thá»‘ng quáº£n lÃ½ mÃ¡y chá»§ táº­p trung vÃ  giáº£i phÃ¡p háº¡ táº§ng dáº¡ng mÃ£ nguá»“n (IaC).
 
-* Bước đầu đạt kỹ năng thực hành cơ bản trong việc cấu hình API Gateway để tiếp nhận và điều hướng luồng xử lý xuống các hàm tính toán của AWS Lambda.
+* BÆ°á»›c Ä‘áº§u Ä‘áº¡t ká»¹ nÄƒng thá»±c hÃ nh cÆ¡ báº£n trong viá»‡c cáº¥u hÃ¬nh API Gateway Ä‘á»ƒ tiáº¿p nháº­n vÃ  Ä‘iá»u hÆ°á»›ng luá»“ng xá»­ lÃ½ xuá»‘ng cÃ¡c hÃ m tÃ­nh toÃ¡n cá»§a AWS Lambda.
 
-* Vận hành thành thạo các tính năng cơ bản của AWS Systems Manager (SSM) thông qua việc lưu trữ tập trung các biến cấu hình tại Parameter Store và dùng Session Manager để truy cập trực tiếp dòng lệnh máy chủ một cách an toàn mà không cần giữ chìa khóa SSH truyền thống.
+* Váº­n hÃ nh thÃ nh tháº¡o cÃ¡c tÃ­nh nÄƒng cÆ¡ báº£n cá»§a AWS Systems Manager (SSM) thÃ´ng qua viá»‡c lÆ°u trá»¯ táº­p trung cÃ¡c biáº¿n cáº¥u hÃ¬nh táº¡i Parameter Store vÃ  dÃ¹ng Session Manager Ä‘á»ƒ truy cáº­p trá»±c tiáº¿p dÃ²ng lá»‡nh mÃ¡y chá»§ má»™t cÃ¡ch an toÃ n mÃ  khÃ´ng cáº§n giá»¯ chÃ¬a khÃ³a SSH truyá»n thá»‘ng.
 
-* Làm quen với vòng đời phát triển hạ tầng bằng AWS CDK, biết cách sử dụng mã nguồn lập trình bậc cao để khởi tạo, tổ chức cấu trúc và triển khai các thành phần hệ thống thay vì thao tác thủ công trên giao diện Web.
+* LÃ m quen vá»›i vÃ²ng Ä‘á»i phÃ¡t triá»ƒn háº¡ táº§ng báº±ng AWS CDK, biáº¿t cÃ¡ch sá»­ dá»¥ng mÃ£ nguá»“n láº­p trÃ¬nh báº­c cao Ä‘á»ƒ khá»Ÿi táº¡o, tá»• chá»©c cáº¥u trÃºc vÃ  triá»ƒn khai cÃ¡c thÃ nh pháº§n há»‡ thá»‘ng thay vÃ¬ thao tÃ¡c thá»§ cÃ´ng trÃªn giao diá»‡n Web.
 
-* Đạt khả năng phối hợp sử dụng song song giao diện Web Console và công cụ dòng lệnh (CLI) để khởi tạo, vận hành và kiểm tra trạng thái hoạt động của các dịch vụ đám mây được học.
+* Äáº¡t kháº£ nÄƒng phá»‘i há»£p sá»­ dá»¥ng song song giao diá»‡n Web Console vÃ  cÃ´ng cá»¥ dÃ²ng lá»‡nh (CLI) Ä‘á»ƒ khá»Ÿi táº¡o, váº­n hÃ nh vÃ  kiá»ƒm tra tráº¡ng thÃ¡i hoáº¡t Ä‘á»™ng cá»§a cÃ¡c dá»‹ch vá»¥ Ä‘Ã¡m mÃ¢y Ä‘Æ°á»£c há»c.

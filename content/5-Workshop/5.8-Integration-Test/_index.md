@@ -1,4 +1,4 @@
----
+﻿---
 title : "Configure integrations and test"
 date : 2024-01-01
 weight : 8
@@ -15,3 +15,4 @@ Follow the child pages in order. Each page includes Method A using AWS Console a
 1. [Configure VNPay IPN and Return URL](5.8.1-vnpay-url/)
 2. [Validate AMB ledger transaction](5.8.2-amb-ledger/)
 3. [Run end-to-end test](5.8.3-e2e-test/)
+

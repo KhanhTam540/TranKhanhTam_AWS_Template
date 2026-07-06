@@ -1,19 +1,20 @@
----
-title : "Dịch vụ chuẩn bị trước stack"
+﻿---
+title : "Dá»‹ch vá»¥ chuáº©n bá»‹ trÆ°á»›c stack"
 date : 2024-01-01
 weight : 5
 chapter : false
 pre : " <b> 5.5. </b> "
 ---
 
-#### Dịch vụ chuẩn bị trước stack
+#### Dá»‹ch vá»¥ chuáº©n bá»‹ trÆ°á»›c stack
 
-Thực hiện các trang con theo đúng thứ tự. Mỗi trang gồm Cách A dùng AWS Console và Cách B dùng lệnh hoặc code deployment.
+Thá»±c hiá»‡n cÃ¡c trang con theo Ä‘Ãºng thá»© tá»±. Má»—i trang gá»“m CÃ¡ch A dÃ¹ng AWS Console vÃ  CÃ¡ch B dÃ¹ng lá»‡nh hoáº·c code deployment.
 
-Phần này chỉ chuẩn bị các dịch vụ bên ngoài cần có trước khi application stack được deploy.
+Pháº§n nÃ y chá»‰ chuáº©n bá»‹ cÃ¡c dá»‹ch vá»¥ bÃªn ngoÃ i cáº§n cÃ³ trÆ°á»›c khi application stack Ä‘Æ°á»£c deploy.
 
-#### Nội dung
+#### Ná»™i dung
 
-1. [Chuẩn bị VNPay Sandbox](5.5.1-vnpay/)
-2. [Tạo AMB Ethereum node](5.5.2-amb/)
-3. [Tạo cấu hình Secrets Manager](5.5.3-secrets/)
+1. [Chuáº©n bá»‹ VNPay Sandbox](5.5.1-vnpay/)
+2. [Táº¡o AMB Ethereum node](5.5.2-amb/)
+3. [Táº¡o cáº¥u hÃ¬nh Secrets Manager](5.5.3-secrets/)
+

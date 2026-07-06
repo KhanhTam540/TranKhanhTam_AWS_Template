@@ -1,4 +1,4 @@
----
+﻿---
 title: "Internship Report"
 date: 2024-01-01
 weight: 1
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/TranKhanhTam_AWS_Template/images/avatar.png)
 
 ### Report Content
 
@@ -38,3 +38,4 @@ chapter: false
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
 7.  [Sharing and Feedback](7-Feedback/)
+

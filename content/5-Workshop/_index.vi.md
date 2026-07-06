@@ -1,4 +1,4 @@
----
+﻿---
 title : "Workshop"
 date : 2024-01-01
 weight : 5
@@ -7,29 +7,30 @@ pre : " <b> 5. </b> "
 ---
 
 
-# Triển khai MedChain AI trên AWS
+# Triá»ƒn khai MedChain AI trÃªn AWS
 
-#### Tổng quan
+#### Tá»•ng quan
 
-MedChain AI là bài lab thực hành xây dựng hệ thống quản lý bệnh viện hoàn chỉnh trên AWS. Workshop này hướng dẫn người học từ bước chuẩn bị đến khi ứng dụng chạy được trên CloudFront domain mặc định.
+MedChain AI lÃ  bÃ i lab thá»±c hÃ nh xÃ¢y dá»±ng há»‡ thá»‘ng quáº£n lÃ½ bá»‡nh viá»‡n hoÃ n chá»‰nh trÃªn AWS. Workshop nÃ y hÆ°á»›ng dáº«n ngÆ°á»i há»c tá»« bÆ°á»›c chuáº©n bá»‹ Ä‘áº¿n khi á»©ng dá»¥ng cháº¡y Ä‘Æ°á»£c trÃªn CloudFront domain máº·c Ä‘á»‹nh.
 
-Bài lab có hai cách thực hiện:
+BÃ i lab cÃ³ hai cÃ¡ch thá»±c hiá»‡n:
 
-+ **Cách A - AWS Console:** tạo và cấu hình tài nguyên bằng giao diện AWS Management Console.
-+ **Cách B - Lệnh / code deployment:** tạo và triển khai tài nguyên bằng AWS CLI, AWS CDK, PowerShell và source code MedChain AI.
++ **CÃ¡ch A - AWS Console:** táº¡o vÃ  cáº¥u hÃ¬nh tÃ i nguyÃªn báº±ng giao diá»‡n AWS Management Console.
++ **CÃ¡ch B - Lá»‡nh / code deployment:** táº¡o vÃ  triá»ƒn khai tÃ i nguyÃªn báº±ng AWS CLI, AWS CDK, PowerShell vÃ  source code MedChain AI.
 
-Website cuối cùng chạy bằng CloudFront distribution domain. VNPay Return URL và IPN URL cũng dùng CloudFront domain.
+Website cuá»‘i cÃ¹ng cháº¡y báº±ng CloudFront distribution domain. VNPay Return URL vÃ  IPN URL cÅ©ng dÃ¹ng CloudFront domain.
 
-Thứ tự trong workshop được sắp xếp theo phụ thuộc thực tế: chuẩn bị tài khoản và công cụ, tạo các dịch vụ cần có trước khi deploy, triển khai stack ứng dụng, khởi tạo dữ liệu, cấu hình tích hợp, kiểm thử luồng nghiệp vụ, giám sát hệ thống và dọn dẹp tài nguyên.
+Thá»© tá»± trong workshop Ä‘Æ°á»£c sáº¯p xáº¿p theo phá»¥ thuá»™c thá»±c táº¿: chuáº©n bá»‹ tÃ i khoáº£n vÃ  cÃ´ng cá»¥, táº¡o cÃ¡c dá»‹ch vá»¥ cáº§n cÃ³ trÆ°á»›c khi deploy, triá»ƒn khai stack á»©ng dá»¥ng, khá»Ÿi táº¡o dá»¯ liá»‡u, cáº¥u hÃ¬nh tÃ­ch há»£p, kiá»ƒm thá»­ luá»“ng nghiá»‡p vá»¥, giÃ¡m sÃ¡t há»‡ thá»‘ng vÃ  dá»n dáº¹p tÃ i nguyÃªn.
 
-#### Nội dung
+#### Ná»™i dung
 
-1. [Tổng quan workshop](5.1-Workshop-overview/)
-2. [Điều kiện chuẩn bị](5.2-Prerequisites/)
-3. [Kiến trúc và thứ tự phụ thuộc](5.3-Architecture/)
-4. [Nền tảng AWS](5.4-AWS-Foundation/)
-5. [Dịch vụ chuẩn bị trước stack](5.5-Pre-Stack-Services/)
-6. [Triển khai application stack](5.6-Deploy-Application/)
-7. [Khởi tạo và chạy ứng dụng](5.7-Initialize-Run/)
-8. [Cấu hình tích hợp và kiểm thử](5.8-Integration-Test/)
-9. [Monitoring, bảo mật, chi phí và cleanup](5.9-Monitoring-Cleanup/)
+1. [Tá»•ng quan workshop](5.1-Workshop-overview/)
+2. [Äiá»u kiá»‡n chuáº©n bá»‹](5.2-Prerequisites/)
+3. [Kiáº¿n trÃºc vÃ  thá»© tá»± phá»¥ thuá»™c](5.3-Architecture/)
+4. [Ná»n táº£ng AWS](5.4-AWS-Foundation/)
+5. [Dá»‹ch vá»¥ chuáº©n bá»‹ trÆ°á»›c stack](5.5-Pre-Stack-Services/)
+6. [Triá»ƒn khai application stack](5.6-Deploy-Application/)
+7. [Khá»Ÿi táº¡o vÃ  cháº¡y á»©ng dá»¥ng](5.7-Initialize-Run/)
+8. [Cáº¥u hÃ¬nh tÃ­ch há»£p vÃ  kiá»ƒm thá»­](5.8-Integration-Test/)
+9. [Monitoring, báº£o máº­t, chi phÃ­ vÃ  cleanup](5.9-Monitoring-Cleanup/)
+

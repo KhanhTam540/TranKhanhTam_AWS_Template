@@ -1,33 +1,33 @@
----
-title: "Worklog Tuần 11"
+﻿---
+title: "Worklog Tuáº§n 11"
 date: 2026-06-29
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-### Mục tiêu tuần 11:
+### Má»¥c tiÃªu tuáº§n 11:
 
-* Chuẩn hóa CCCD làm mã hồ sơ bệnh án chính trên toàn bộ dữ liệu y tế liên quan.
+* Chuáº©n hÃ³a CCCD lÃ m mÃ£ há»“ sÆ¡ bá»‡nh Ã¡n chÃ­nh trÃªn toÃ n bá»™ dá»¯ liá»‡u y táº¿ liÃªn quan.
 
-* Xây dựng Medical Integrity Ledger để kiểm tra tính toàn vẹn của hồ sơ bệnh án.
+* XÃ¢y dá»±ng Medical Integrity Ledger Ä‘á»ƒ kiá»ƒm tra tÃ­nh toÃ n váº¹n cá»§a há»“ sÆ¡ bá»‡nh Ã¡n.
 
-* Thiết kế luồng neo hash lên AMB blockchain và luồng thanh toán thật VNPay/MoMo.
+* Thiáº¿t káº¿ luá»“ng neo hash lÃªn AMB blockchain vÃ  luá»“ng thanh toÃ¡n tháº­t VNPay/MoMo.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+### CÃ¡c cÃ´ng viá»‡c cáº§n triá»ƒn khai trong tuáº§n nÃ y:
+| Thá»© | CÃ´ng viá»‡c                                                                                                                                                                                   | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | Nguá»“n tÃ i liá»‡u                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Chuẩn hóa CCCD làm mã hồ sơ bệnh án chính và đồng bộ mã này trên thông tin bệnh nhân, hồ sơ bệnh án, lịch hẹn và tài liệu y tế.                                                                                        | 29/06/2026   | 29/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Xây dựng cấu trúc hash-chain cho phiếu khám, đơn thuốc, kết quả xét nghiệm, hóa đơn và các tài liệu y tế đã được xác nhận.                                            | 30/06/2026   | 30/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Thiết kế cách neo hash hồ sơ y tế lên Ethereum thông qua Amazon Managed Blockchain, gồm transactionHash, blockNumber và blockchainStatus. | 01/07/2026   | 01/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Thiết kế luồng thanh toán thật VNPay/MoMo, gồm tạo hóa đơn, tạo URL thanh toán, return URL, IPN/callback và xác thực giao dịch.                  | 02/07/2026   | 02/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Reset dataset, kiểm tra tính đồng bộ dữ liệu, tạo lại các ledger block và kiểm thử xác thực blockchain trên trang hồ sơ bệnh án.                                                                                         | 03/07/2026   | 03/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Chuáº©n hÃ³a CCCD lÃ m mÃ£ há»“ sÆ¡ bá»‡nh Ã¡n chÃ­nh vÃ  Ä‘á»“ng bá»™ mÃ£ nÃ y trÃªn thÃ´ng tin bá»‡nh nhÃ¢n, há»“ sÆ¡ bá»‡nh Ã¡n, lá»‹ch háº¹n vÃ  tÃ i liá»‡u y táº¿.                                                                                        | 29/06/2026   | 29/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - XÃ¢y dá»±ng cáº¥u trÃºc hash-chain cho phiáº¿u khÃ¡m, Ä‘Æ¡n thuá»‘c, káº¿t quáº£ xÃ©t nghiá»‡m, hÃ³a Ä‘Æ¡n vÃ  cÃ¡c tÃ i liá»‡u y táº¿ Ä‘Ã£ Ä‘Æ°á»£c xÃ¡c nháº­n.                                            | 30/06/2026   | 30/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Thiáº¿t káº¿ cÃ¡ch neo hash há»“ sÆ¡ y táº¿ lÃªn Ethereum thÃ´ng qua Amazon Managed Blockchain, gá»“m transactionHash, blockNumber vÃ  blockchainStatus. | 01/07/2026   | 01/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Thiáº¿t káº¿ luá»“ng thanh toÃ¡n tháº­t VNPay/MoMo, gá»“m táº¡o hÃ³a Ä‘Æ¡n, táº¡o URL thanh toÃ¡n, return URL, IPN/callback vÃ  xÃ¡c thá»±c giao dá»‹ch.                  | 02/07/2026   | 02/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Reset dataset, kiá»ƒm tra tÃ­nh Ä‘á»“ng bá»™ dá»¯ liá»‡u, táº¡o láº¡i cÃ¡c ledger block vÃ  kiá»ƒm thá»­ xÃ¡c thá»±c blockchain trÃªn trang há»“ sÆ¡ bá»‡nh Ã¡n.                                                                                         | 03/07/2026   | 03/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Kết quả đạt được tuần 11:
+### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c tuáº§n 11:
 
-* Chuẩn hóa CCCD làm mã hồ sơ bệnh án chính.
+* Chuáº©n hÃ³a CCCD lÃ m mÃ£ há»“ sÆ¡ bá»‡nh Ã¡n chÃ­nh.
 
-* Xây dựng cấu trúc Medical Integrity Ledger dạng hash-chain.
+* XÃ¢y dá»±ng cáº¥u trÃºc Medical Integrity Ledger dáº¡ng hash-chain.
 
-* Xác định các trường giao dịch AMB và luồng thanh toán thật VNPay/MoMo.
+* XÃ¡c Ä‘á»‹nh cÃ¡c trÆ°á»ng giao dá»‹ch AMB vÃ  luá»“ng thanh toÃ¡n tháº­t VNPay/MoMo.

@@ -1,25 +1,25 @@
----
-title : "Chuẩn bị VNPay Sandbox"
+﻿---
+title : "Chuáº©n bá»‹ VNPay Sandbox"
 date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.5.1. </b> "
 ---
 
-#### Mục tiêu
+#### Má»¥c tiÃªu
 
-Chuẩn bị thông tin VNPay Sandbox trước khi deploy payment backend.
+Chuáº©n bá»‹ thÃ´ng tin VNPay Sandbox trÆ°á»›c khi deploy payment backend.
 
-#### Cách A - VNPay Sandbox portal
+#### CÃ¡ch A - VNPay Sandbox portal
 
-1. Đăng ký hoặc yêu cầu tài khoản merchant VNPay Sandbox.
-2. Lấy **TMN Code**.
-3. Lấy **Hash Secret** và lưu an toàn.
-4. Chưa cấu hình IPN/Return URL ở bước này. Các URL này chỉ có sau khi CloudFront được tạo.
+1. ÄÄƒng kÃ½ hoáº·c yÃªu cáº§u tÃ i khoáº£n merchant VNPay Sandbox.
+2. Láº¥y **TMN Code**.
+3. Láº¥y **Hash Secret** vÃ  lÆ°u an toÃ n.
+4. ChÆ°a cáº¥u hÃ¬nh IPN/Return URL á»Ÿ bÆ°á»›c nÃ y. CÃ¡c URL nÃ y chá»‰ cÃ³ sau khi CloudFront Ä‘Æ°á»£c táº¡o.
 
-![Thông tin VNPay](/images/5-Workshop/5.5-Pre-Stack-Services/5.5.1-vnpay/vnpay.png)
+![ThÃ´ng tin VNPay](/TranKhanhTam_AWS_Template/images/5-Workshop/5.5-Pre-Stack-Services/5.5.1-vnpay/vnpay.png)
 
-#### Cách B - Biến môi trường
+#### CÃ¡ch B - Biáº¿n mÃ´i trÆ°á»ng
 
 ```powershell
 $env:VNPAY_PAYMENT_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
@@ -27,6 +27,7 @@ $env:VNPAY_TMN_CODE = "YOUR_TMN_CODE"
 $env:VNPAY_HASH_SECRET = "YOUR_HASH_SECRET"
 ```
 
-#### Kiểm tra
+#### Kiá»ƒm tra
 
-TMN Code và Hash Secret phải sẵn sàng trước khi deploy application stack.
+TMN Code vÃ  Hash Secret pháº£i sáºµn sÃ ng trÆ°á»›c khi deploy application stack.
+

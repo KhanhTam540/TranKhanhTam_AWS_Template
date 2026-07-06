@@ -1,5 +1,5 @@
----
-title : "Tạo CDK bootstrap resources"
+﻿---
+title : "Táº¡o CDK bootstrap resources"
 date : 2024-01-01
 weight : 3
 chapter : false
@@ -7,19 +7,19 @@ pre : " <b> 5.4.3. </b> "
 ---
 
 
-#### Mục tiêu
+#### Má»¥c tiÃªu
 
-Tạo CDK bootstrap stack và artifact bucket trước khi deploy application stack.
+Táº¡o CDK bootstrap stack vÃ  artifact bucket trÆ°á»›c khi deploy application stack.
 
-#### Cách A - AWS Console
+#### CÃ¡ch A - AWS Console
 
-1. Mở **CloudFormation**.
-2. Kiểm tra `CDKToolkit` đã tồn tại chưa.
-3. Mở **S3** và kiểm tra CDK asset bucket sau khi bootstrap.
+1. Má»Ÿ **CloudFormation**.
+2. Kiá»ƒm tra `CDKToolkit` Ä‘Ã£ tá»“n táº¡i chÆ°a.
+3. Má»Ÿ **S3** vÃ  kiá»ƒm tra CDK asset bucket sau khi bootstrap.
 
-![CDKToolkit console](/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk.png)
+![CDKToolkit console](/TranKhanhTam_AWS_Template/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk.png)
 
-#### Cách B - Lệnh / code deployment
+#### CÃ¡ch B - Lá»‡nh / code deployment
 
 ```powershell
 $AccountId = aws sts get-caller-identity --profile $Profile --query Account --output text
@@ -28,7 +28,7 @@ npm --prefix web install
 npx cdk bootstrap aws://$AccountId/$Region --profile $Profile
 ```
 
-#### Kiểm tra
+#### Kiá»ƒm tra
 
 ```powershell
 aws cloudformation describe-stacks `
@@ -38,4 +38,4 @@ aws cloudformation describe-stacks `
   --query "Stacks[0].StackStatus" `
   --output text
 ```
-![CDKToolkit console](/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk_1.png)
+![CDKToolkit console](/TranKhanhTam_AWS_Template/images/5-Workshop/5.4-AWS-Foundation/5.4.3-cdk-bootstrap/cdk_1.png)

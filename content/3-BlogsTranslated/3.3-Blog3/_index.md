@@ -1,4 +1,4 @@
----
+﻿---
 title: "Blog 3"
 date: 2026-07-05
 weight: 3
@@ -13,7 +13,7 @@ In the healthcare industry, patient support is not only a customer service activ
 
 As healthcare organizations grow, managing a large number of patient calls manually becomes increasingly difficult. Staff may need to handle appointment requests, urgent questions, voicemail messages, language preferences, and specialist routing at the same time. If the call center is not designed well, patients may wait too long, calls may be routed incorrectly, and staff may become overloaded.
 
-The AWS blog article **“Scaling oncology patient support: How New York Cancer and Blood Specialists transformed customer experience with AWS and Pronetx, now part of Caylent”** presents a real-world case study of how New York Cancer and Blood Specialists, also known as NYCBS, improved its patient support system using AWS cloud services.
+The AWS blog article **â€œScaling oncology patient support: How New York Cancer and Blood Specialists transformed customer experience with AWS and Pronetx, now part of Caylentâ€** presents a real-world case study of how New York Cancer and Blood Specialists, also known as NYCBS, improved its patient support system using AWS cloud services.
 
 NYCBS is a major oncology and hematology care provider in the United States. To improve its patient communication experience, NYCBS worked with AWS and Pronetx, now part of Caylent, to move from a legacy contact center model to a cloud-based contact center architecture using Amazon Connect.
 
@@ -74,11 +74,11 @@ A simplified flow can be described as:
 
 ```text
 Patient leaves voicemail
-→ Recording is stored in Amazon S3
-→ Amazon Transcribe converts speech to text
-→ AWS Lambda processes the transcript
-→ A case or task is created automatically
-→ Staff can review and respond more quickly
+â†’ Recording is stored in Amazon S3
+â†’ Amazon Transcribe converts speech to text
+â†’ AWS Lambda processes the transcript
+â†’ A case or task is created automatically
+â†’ Staff can review and respond more quickly
 ```
 
 Amazon Transcribe converts spoken audio into text. After the voicemail is transcribed, Lambda functions can process the text and create cases automatically. This reduces manual data entry and helps ensure that patient messages are not missed.
@@ -120,11 +120,11 @@ A simplified routing idea can be shown as:
 
 ```text
 Patient call received
-→ Identify language and request type
-→ Check urgency level
-→ Route to the correct queue
-→ Prioritize urgent cases
-→ Connect patient to the right staff member
+â†’ Identify language and request type
+â†’ Check urgency level
+â†’ Route to the correct queue
+â†’ Prioritize urgent cases
+â†’ Connect patient to the right staff member
 ```
 
 This type of intelligent routing is especially important in healthcare because patient communication is often time-sensitive.
@@ -184,7 +184,7 @@ This is important because healthcare systems require careful planning and valida
 
 A structured implementation process reduces the risk of service disruption and helps ensure that the final solution meets operational and compliance requirements.
 
-![Blog 3](/images/3-Blog/Blog-3.png)
+![Blog 3](/TranKhanhTam_AWS_Template/images/3-Blog/Blog-3.png)
 
 ## 10. Main lessons from the article
 

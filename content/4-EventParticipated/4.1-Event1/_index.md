@@ -1,4 +1,4 @@
----
+﻿---
 title: "Event 1"
 date: 2026-05-23
 weight: 2
@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “FCAJ Community Day”
+# Summary Report: â€œFCAJ Community Dayâ€
 
 ### Event Objectives
 
@@ -18,22 +18,22 @@ pre: " <b> 4.1. </b> "
 
 ### Speakers
 
-- **Tinh Truong** – Platform Engineer, GoTymeX  
+- **Tinh Truong** â€“ Platform Engineer, GoTymeX  
   Topic: **Context Is Everything - Making AI Actually Work for You**
 
-- **Pham Ng Hai Anh** – G-AsiaPacific Vietnam, AWS Community Builder  
+- **Pham Ng Hai Anh** â€“ G-AsiaPacific Vietnam, AWS Community Builder  
   Topic: **Friendly AI Assistant with Amazon Quick**
 
-- **Nguyen Tuan Thinh** – DevOps Engineer, First Cloud AI Journey  
+- **Nguyen Tuan Thinh** â€“ DevOps Engineer, First Cloud AI Journey  
   Topic: **From Edge to Origin: CloudFront as Your Foundation**
 
 - **Team VIB**  
-  Topic: **36 hrs with LotusHacks – Building UTMorpho from Idea to Reality**
+  Topic: **36 hrs with LotusHacks â€“ Building UTMorpho from Idea to Reality**
 
-- **Duc Dao** – Solution Architect, Cloud Kinetics  
-  Topic: **Non-Determinism of “Deterministic” LLM Settings**
+- **Duc Dao** â€“ Solution Architect, Cloud Kinetics  
+  Topic: **Non-Determinism of â€œDeterministicâ€ LLM Settings**
 
-- **Vy Lam** – Senior Business Systems Analyst, VPBank  
+- **Vy Lam** â€“ Senior Business Systems Analyst, VPBank  
   Topic: **Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring**
 
 ### Event Overview
@@ -46,9 +46,9 @@ The event was valuable because it did not focus on only one topic. Instead, it c
 
 #### Context Is Everything - Making AI Actually Work for You
 
-This session explained that AI models are already powerful, but many poor AI responses come from weak context rather than weak models. The speaker emphasized that AI cannot perfectly infer the user’s goal, situation, constraints, or success criteria unless the user provides them clearly.
+This session explained that AI models are already powerful, but many poor AI responses come from weak context rather than weak models. The speaker emphasized that AI cannot perfectly infer the userâ€™s goal, situation, constraints, or success criteria unless the user provides them clearly.
 
-The session introduced the meaning of context in AI usage. Context includes the user’s goal, current situation, constraints, relevant evidence, expected output format, and success criteria. When these elements are provided clearly, AI can produce more useful and accurate responses.
+The session introduced the meaning of context in AI usage. Context includes the userâ€™s goal, current situation, constraints, relevant evidence, expected output format, and success criteria. When these elements are provided clearly, AI can produce more useful and accurate responses.
 
 Several common mistakes were discussed:
 
@@ -95,9 +95,9 @@ The session discussed several important capabilities:
 
 The session also explained how CloudFront can reduce origin costs. For example, when CloudFront handles caching and compression, the origin server receives fewer requests and consumes less CPU. CloudFront can also reduce data transfer and load balancer usage in some scenarios.
 
-#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
+#### 36 hrs with LotusHacks â€“ Building UTMorpho from Idea to Reality
 
-This session shared the experience of Team VIB during LotusHacks 2026. The team joined Vietnam’s largest hackathon and had 36 hours to create a product from idea to implementation.
+This session shared the experience of Team VIB during LotusHacks 2026. The team joined Vietnamâ€™s largest hackathon and had 36 hours to create a product from idea to implementation.
 
 The session walked through the journey from joining the hackathon with uncertainty, discovering a real problem from daily work, defining the product idea, building under time pressure, and finally preparing the product overview and demo.
 
@@ -114,7 +114,7 @@ Several practical lessons were highlighted:
 
 The session also discussed challenges such as AI overgeneration, token limits, burnout near pitch time, and the difficulty of polishing a product within a short deadline.
 
-#### Non-Determinism of “Deterministic” LLM Settings
+#### Non-Determinism of â€œDeterministicâ€ LLM Settings
 
 This session explained why large language models may still produce different outputs even when settings appear deterministic. Many users assume that setting temperature to zero guarantees the same output every time. However, the speaker explained that this assumption is not always true.
 
@@ -252,7 +252,7 @@ A strong part of the session was the focus on enterprise-grade thinking. A proof
 
 ### Event Experience
 
-Attending **“AWS Vietnam Community Day - May 2026”** was a valuable learning experience because the event covered both technical depth and practical implementation lessons. The sessions were diverse, ranging from AI usage mindset to cloud architecture, LLM reliability, hackathon experience, and enterprise AI deployment.
+Attending **â€œAWS Vietnam Community Day - May 2026â€** was a valuable learning experience because the event covered both technical depth and practical implementation lessons. The sessions were diverse, ranging from AI usage mindset to cloud architecture, LLM reliability, hackathon experience, and enterprise AI deployment.
 
 #### Learning how to use AI better
 
@@ -289,8 +289,8 @@ The multi-agent credit scoring session helped me understand when multi-agent arc
 
 #### Some event photos
 
-![Your event picture](/images/4-Event/Event_1/picture-event1-1.jpg)
-![Your event picture](/images/4-Event/Event_1/picture-event1-2.jpg)
-![Your event picture](/images/4-Event/Event_1/picture-event1-3.jpg)
+![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_1/picture-event1-1.jpg)
+![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_1/picture-event1-2.jpg)
+![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_1/picture-event1-3.jpg)
 
 > Overall, the event helped me understand how AWS and AI can be applied in many real-world scenarios. It also showed that successful cloud and AI systems require not only technical tools, but also good design thinking, security awareness, testing, and practical experience.

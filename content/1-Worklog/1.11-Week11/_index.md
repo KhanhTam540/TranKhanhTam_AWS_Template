@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 11 Worklog"
 date: 2026-06-29
 weight: 2

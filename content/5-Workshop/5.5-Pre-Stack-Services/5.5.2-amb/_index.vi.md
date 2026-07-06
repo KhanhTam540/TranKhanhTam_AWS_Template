@@ -1,29 +1,29 @@
----
-title : "Tạo AMB Ethereum node"
+﻿---
+title : "Táº¡o AMB Ethereum node"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.5.2. </b> "
 ---
 
-#### Mục tiêu
+#### Má»¥c tiÃªu
 
-Tạo AMB Ethereum node thật trước khi bật blockchain ledger validation.
+Táº¡o AMB Ethereum node tháº­t trÆ°á»›c khi báº­t blockchain ledger validation.
 
-#### Cách A - AWS Console
+#### CÃ¡ch A - AWS Console
 
-1. Mở **Amazon Managed Blockchain**.
-2. Chọn **Access Ethereum**.
-3. Tạo dedicated Ethereum node.
-4. Chờ trạng thái **Available**.
+1. Má»Ÿ **Amazon Managed Blockchain**.
+2. Chá»n **Access Ethereum**.
+3. Táº¡o dedicated Ethereum node.
+4. Chá» tráº¡ng thÃ¡i **Available**.
 5. Copy HTTP endpoint.
 
-![AMB Ethereum node](/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_1.png)
-![AMB Ethereum node](/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_2.png)
-![AMB Ethereum node](/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_3.png)
-![AMB Ethereum node](/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_4.png)
+![AMB Ethereum node](/TranKhanhTam_AWS_Template/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_1.png)
+![AMB Ethereum node](/TranKhanhTam_AWS_Template/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_2.png)
+![AMB Ethereum node](/TranKhanhTam_AWS_Template/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_3.png)
+![AMB Ethereum node](/TranKhanhTam_AWS_Template/images/5-Workshop/5.5-Pre-Stack-Services/5.5.2-amb/amb_4.png)
 
-#### Cách B - Lệnh / code deployment
+#### CÃ¡ch B - Lá»‡nh / code deployment
 
 ```powershell
 $env:AMB_ETHEREUM_ENDPOINT = "https://nd-xxxxx.ethereum.managedblockchain.ap-southeast-1.amazonaws.com/"
@@ -35,6 +35,7 @@ awscurl `
   "$env:AMB_ETHEREUM_ENDPOINT"
 ```
 
-#### Kiểm tra
+#### Kiá»ƒm tra
 
-JSON-RPC response cần trả về block number result.
+JSON-RPC response cáº§n tráº£ vá» block number result.
+

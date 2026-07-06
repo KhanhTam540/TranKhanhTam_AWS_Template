@@ -1,5 +1,5 @@
----
-title: "Worklog Tuần 10"
+﻿---
+title: "Worklog Tuáº§n 10"
 date: 2026-06-22
 weight: 2
 chapter: false
@@ -8,32 +8,32 @@ pre: " <b> 1.10. </b> "
 
 
 
-### Mục tiêu tuần 10:
+### Má»¥c tiÃªu tuáº§n 10:
 
-* Xây dựng hạ tầng AWS cốt lõi cho hệ thống SmartHospital P2TB bằng AWS CDK.
+* XÃ¢y dá»±ng háº¡ táº§ng AWS cá»‘t lÃµi cho há»‡ thá»‘ng SmartHospital P2TB báº±ng AWS CDK.
 
-* Cấu hình xác thực, backend API, lưu trữ dữ liệu, hosting frontend và phân phối qua CloudFront.
+* Cáº¥u hÃ¬nh xÃ¡c thá»±c, backend API, lÆ°u trá»¯ dá»¯ liá»‡u, hosting frontend vÃ  phÃ¢n phá»‘i qua CloudFront.
 
-* Chuẩn bị dataset ban đầu và kiểm tra kết nối giữa frontend, backend, Cognito và DynamoDB.
+* Chuáº©n bá»‹ dataset ban Ä‘áº§u vÃ  kiá»ƒm tra káº¿t ná»‘i giá»¯a frontend, backend, Cognito vÃ  DynamoDB.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+### CÃ¡c cÃ´ng viá»‡c cáº§n triá»ƒn khai trong tuáº§n nÃ y:
+| Thá»© | CÃ´ng viá»‡c                                                                                                                                                                                   | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | Nguá»“n tÃ i liá»‡u                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Cấu hình các tài nguyên AWS chính bằng CDK, gồm Lambda, bảng DynamoDB, Cognito User Pool, API Gateway, S3 bucket và CloudFront distribution.               | 22/06/2026   | 22/06/2026      |<https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Thiết lập xác thực người dùng, tạo Cognito groups và kiểm tra luồng đăng nhập cho tài khoản Admin, Bác sĩ, Nhân sự y tế và Bệnh nhân.                          | 23/06/2026   | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Triển khai các API Lambda ban đầu cho hồ sơ người dùng, thông tin bệnh nhân, thông tin bác sĩ, dữ liệu lịch hẹn và truy cập hồ sơ bệnh án.                     | 24/06/2026  | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Xây dựng frontend React, upload file tĩnh lên S3, cấu hình CloudFront và kiểm tra truy cập website thông qua domain triển khai.                                  | 25/06/2026  | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | Tạo dữ liệu mẫu cho người dùng, bệnh nhân, bác sĩ, lịch hẹn, hồ sơ, xét nghiệm, hóa đơn và kiểm tra frontend lấy dữ liệu từ DynamoDB.                           | 26/06/2026   | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Cáº¥u hÃ¬nh cÃ¡c tÃ i nguyÃªn AWS chÃ­nh báº±ng CDK, gá»“m Lambda, báº£ng DynamoDB, Cognito User Pool, API Gateway, S3 bucket vÃ  CloudFront distribution.               | 22/06/2026   | 22/06/2026      |<https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Thiáº¿t láº­p xÃ¡c thá»±c ngÆ°á»i dÃ¹ng, táº¡o Cognito groups vÃ  kiá»ƒm tra luá»“ng Ä‘Äƒng nháº­p cho tÃ i khoáº£n Admin, BÃ¡c sÄ©, NhÃ¢n sá»± y táº¿ vÃ  Bá»‡nh nhÃ¢n.                          | 23/06/2026   | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Triá»ƒn khai cÃ¡c API Lambda ban Ä‘áº§u cho há»“ sÆ¡ ngÆ°á»i dÃ¹ng, thÃ´ng tin bá»‡nh nhÃ¢n, thÃ´ng tin bÃ¡c sÄ©, dá»¯ liá»‡u lá»‹ch háº¹n vÃ  truy cáº­p há»“ sÆ¡ bá»‡nh Ã¡n.                     | 24/06/2026  | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - XÃ¢y dá»±ng frontend React, upload file tÄ©nh lÃªn S3, cáº¥u hÃ¬nh CloudFront vÃ  kiá»ƒm tra truy cáº­p website thÃ´ng qua domain triá»ƒn khai.                                  | 25/06/2026  | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | Táº¡o dá»¯ liá»‡u máº«u cho ngÆ°á»i dÃ¹ng, bá»‡nh nhÃ¢n, bÃ¡c sÄ©, lá»‹ch háº¹n, há»“ sÆ¡, xÃ©t nghiá»‡m, hÃ³a Ä‘Æ¡n vÃ  kiá»ƒm tra frontend láº¥y dá»¯ liá»‡u tá»« DynamoDB.                           | 26/06/2026   | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Kết quả đạt được tuần 10:
+### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c tuáº§n 10:
 
-* Cấu hình thành công hạ tầng AWS chính bằng CDK.
+* Cáº¥u hÃ¬nh thÃ nh cÃ´ng háº¡ táº§ng AWS chÃ­nh báº±ng CDK.
 
-* Hoàn thành thiết lập Cognito authentication và nhóm phân quyền.
+* HoÃ n thÃ nh thiáº¿t láº­p Cognito authentication vÃ  nhÃ³m phÃ¢n quyá»n.
 
-* Triển khai các API backend đầu tiên bằng Lambda và API Gateway.
+* Triá»ƒn khai cÃ¡c API backend Ä‘áº§u tiÃªn báº±ng Lambda vÃ  API Gateway.
 
-* Đưa frontend lên S3 và phân phối qua CloudFront.
+* ÄÆ°a frontend lÃªn S3 vÃ  phÃ¢n phá»‘i qua CloudFront.
 
-* Tạo bộ dữ liệu mẫu đầu tiên để kiểm thử hệ thống.
+* Táº¡o bá»™ dá»¯ liá»‡u máº«u Ä‘áº§u tiÃªn Ä‘á»ƒ kiá»ƒm thá»­ há»‡ thá»‘ng.
