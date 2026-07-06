@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sharing and Feedback"
 date: 2026-07-05
 weight: 7
@@ -15,7 +15,7 @@ The work environment is very friendly and open. FCJ members are always ready to 
 
 **3. Suitability between Work and Major** My work has expanded into new areas that I had never encountered before. I have gained new knowledge and can apply it to future jobs more effectively.
 
-**4. Learning & Skill Development Opportunities**
+**4. **Learning & Skill Development Opportunities**
 During my internship, I learned many new skills such as using AWS tools, teamwork skills, and professional communication in a company environment. My mentor also shared many practical experiences that helped me better orient my career.
 
 **5. Culture & Team Spirit**

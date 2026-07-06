@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Translated Blogs"
 date: 2026-07-05
 weight: 3
@@ -36,4 +36,3 @@ This blog presents a healthcare case study about how New York Cancer and Blood S
 The solution uses Amazon Connect as the core cloud contact center platform. It also combines Amazon API Gateway, AWS Lambda, and Amazon DynamoDB to manage Contact Trace Records and disposition codes. For voicemail processing, recordings are stored in Amazon S3 and processed using Amazon Transcribe, helping convert patient voice messages into text and automatically create follow-up cases.
 
 The blog also highlights the use of Amazon Lex and Amazon Polly for conversational AI and automated voice interactions. In addition, it discusses multilingual routing, queue prioritization, HIPAA-related security considerations, real-time monitoring, and structured deployment planning. Overall, this case study demonstrates how cloud contact center technology and AI/ML can improve patient support, reduce manual work, and enhance customer experience in healthcare.
-

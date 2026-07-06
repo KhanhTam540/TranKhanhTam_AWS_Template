@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Week 6 Worklog"
 date: 2026-05-25
 weight: 1
@@ -30,6 +30,6 @@ pre: " <b> 1.6. </b> "
 
 * Developed baseline practical competencies in leveraging the AWS Management Console and CLI to provision, modify, and monitor essential states of the studied security suites.
 
-* Successfully clarified all foundational business requirements and workflows, ensuring alignment on the projectâ€™s scope and system rules.
+* Successfully clarified all foundational business requirements and workflows, ensuring alignment on the project’s scope and system rules.
 
 * Completed the initial database schema blueprint and ERD models, establishing well-defined data table structures and constraints required for the project backend.

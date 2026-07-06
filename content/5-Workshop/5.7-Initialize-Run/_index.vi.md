@@ -1,18 +1,17 @@
-﻿---
-title : "Khá»Ÿi táº¡o vÃ  cháº¡y á»©ng dá»¥ng"
+---
+title : "Khởi tạo và chạy ứng dụng"
 date : 2024-01-01
 weight : 7
 chapter : false
 pre : " <b> 5.7. </b> "
 ---
 
-#### Khá»Ÿi táº¡o vÃ  cháº¡y á»©ng dá»¥ng
+#### Khởi tạo và chạy ứng dụng
 
-Thá»±c hiá»‡n cÃ¡c trang con theo Ä‘Ãºng thá»© tá»±. Má»—i trang cÃ³ CÃ¡ch A báº±ng AWS Console vÃ  CÃ¡ch B báº±ng lá»‡nh hoáº·c code deployment.
+Thực hiện các trang con theo đúng thứ tự. Mỗi trang có Cách A bằng AWS Console và Cách B bằng lệnh hoặc code deployment.
 
-#### Ná»™i dung
+#### Nội dung
 
-1. [Seed dá»¯ liá»‡u á»©ng dá»¥ng](5.7.1-seed-data/)
-2. [Build vÃ  upload web frontend](5.7.2-build-upload-web/)
-3. [Invalidate CloudFront vÃ  má»Ÿ website](5.7.3-invalidate-open/)
-
+1. [Seed dữ liệu ứng dụng](5.7.1-seed-data/)
+2. [Build và upload web frontend](5.7.2-build-upload-web/)
+3. [Invalidate CloudFront và mở website](5.7.3-invalidate-open/)

@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Build and upload web frontend"
 date : 2024-01-01
 weight : 2
@@ -17,9 +17,9 @@ Build the frontend and upload generated files to the frontend S3 bucket.
 3. Upload files from `web/dist`.
 4. Confirm `index.html` and `assets/` exist.
 
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
 
 #### Method B - Command / code deployment
 
@@ -33,4 +33,3 @@ aws s3 sync .\web\dist "s3://$FrontendBucket" --profile $Profile
 #### Validation
 
 S3 frontend bucket should contain `index.html` and built assets.
-

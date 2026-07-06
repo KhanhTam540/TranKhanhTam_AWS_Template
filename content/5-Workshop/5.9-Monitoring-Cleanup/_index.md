@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Monitoring, security, cost, and cleanup"
 date : 2024-01-01
 weight : 9
@@ -17,8 +17,8 @@ After the application has traffic, open CloudWatch to check logs and metrics.
 3. Review Lambda log groups.
 4. Open **Metrics** and check Lambda errors, duration and throttles.
 
-![CloudWatch logs](/TranKhanhTam_AWS_Template/images/5-Workshop/5.9-Monitoring-Cleanup/log_group.png)
-![CloudWatch logs](/TranKhanhTam_AWS_Template/images/5-Workshop/5.9-Monitoring-Cleanup/metric.png)
+![CloudWatch logs](/images/5-Workshop/5.9-Monitoring-Cleanup/log_group.png)
+![CloudWatch logs](/images/5-Workshop/5.9-Monitoring-Cleanup/metric.png)
 
 #### Method B - Command / code deployment
 
@@ -40,7 +40,7 @@ Check the following items:
 + AMB node is deleted after the blockchain evidence screenshot is captured if the lab is no longer needed.
 + Billing dashboard is reviewed after deployment.
 
-![Cost review](/TranKhanhTam_AWS_Template/images/5-Workshop/5.9-Monitoring-Cleanup/cost-review.png)
+![Cost review](/images/5-Workshop/5.9-Monitoring-Cleanup/cost-review.png)
 
 #### Cleanup order
 
@@ -61,5 +61,4 @@ npx cdk destroy $StackName `
   --force
 ```
 
-![Delete stack](/TranKhanhTam_AWS_Template/images/5-Workshop/5.9-Monitoring-Cleanup/delete-stack.png)
-
+![Delete stack](/images/5-Workshop/5.9-Monitoring-Cleanup/delete-stack.png)

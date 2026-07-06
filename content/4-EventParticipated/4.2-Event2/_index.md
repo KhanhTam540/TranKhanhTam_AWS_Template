@@ -1,11 +1,11 @@
-﻿---
+---
 title: "Event 2"
 date: 2024-01-01
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
-# Report on â€œFCAJ Community Dayâ€
+# Report on “FCAJ Community Day”
 
 ### Event Objectives
 
@@ -27,13 +27,13 @@ pre: " <b> 4.2. </b> "
 
 #### AgenticOps for your Cloud
 
-This section introduces the idea of â€‹â€‹shifting from a traditional monitoring and alerting model to a smarter incident response. Instead of just detecting errors and sending alerts to humans, an AI-powered incident response system can analyze problems, suggest actions, and support faster resolution.
+This section introduces the idea of ​​shifting from a traditional monitoring and alerting model to a smarter incident response. Instead of just detecting errors and sending alerts to humans, an AI-powered incident response system can analyze problems, suggest actions, and support faster resolution.
 
 The content of this presentation shows how AI can support operations teams by reducing repetitive investigation tasks. In a modern cloud environment, systems generate a lot of logs, metrics, and events. AI can help summarize information, identify potential causes, and suggest the next steps in the process.
 
 #### Voice Agents: Building Voice Agents at Scale
 
-This section focuses on building voice agents capable of interacting with users naturally and closely resembling humans. Speakers emphasized that making the AI â€‹â€‹model capable of speaking is no longer the most difficult part. The real challenge arises when the system needs to operate stably in a production environment.
+This section focuses on building voice agents capable of interacting with users naturally and closely resembling humans. Speakers emphasized that making the AI ​​model capable of speaking is no longer the most difficult part. The real challenge arises when the system needs to operate stably in a production environment.
 
 A voice agent system typically consists of several components:
 
@@ -45,7 +45,7 @@ A voice agent system typically consists of several components:
 
 This section highlights several challenges in production deployment:
 
-- Maintaining low latency in the STT â†’ LLM â†’ TTS pipeline
+- Maintaining low latency in the STT → LLM → TTS pipeline
 
 - Handling interruptions without cutting off the user too early
 - Accurately identifying context, nuances, and intent
@@ -150,7 +150,7 @@ The event also demonstrated the value of community-based learning. Participants 
 
 - The importance of reducing latency in AI voice systems.
 
-- Understanding how AI can support DevOps teams by reducing repetitive investigation work. - How does the AI â€‹â€‹system model work in a business?
+- Understanding how AI can support DevOps teams by reducing repetitive investigation work. - How does the AI ​​system model work in a business?
 
 ### Applications in Work
 
@@ -170,7 +170,7 @@ The event also demonstrated the value of community-based learning. Participants 
 
 ### Event Experience
 
-Attending the **â€œFCAJ Community Dayâ€** event was a very useful learning experience. The event provided a broad perspective on how AWS, AI agents, DevOps automation, Amazon Q, and cloud architecture are being applied in real-world scenarios.
+Attending the **“FCAJ Community Day”** event was a very useful learning experience. The event provided a broad perspective on how AWS, AI agents, DevOps automation, Amazon Q, and cloud architecture are being applied in real-world scenarios.
 
 #### Learning from Real-World Sharing
 
@@ -206,11 +206,11 @@ The event also showcased the power of the AWS community. It connected students, 
 
 #### Some photos from the event
 
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-1.jpg)
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-2.jpg)
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-3.jpg)
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-4.jpg)
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-5.jpg)
-![Your event picture](/TranKhanhTam_AWS_Template/images/4-Event/Event_2/picture-event1-6.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-1.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-2.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-3.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-4.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-5.jpg)
+![Your event picture](/images/4-Event/Event_2/picture-event1-6.jpg)
 
 Overall, the event helped me better understand how AWS and AI can combine to build practical, scalable, and secure solutions. At the same time, the event also motivated me to continue learning about AI agents, cloud architecture, and DevOps automation.

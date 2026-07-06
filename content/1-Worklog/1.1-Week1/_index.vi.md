@@ -1,5 +1,5 @@
-﻿---
-title: "Worklog Tuáº§n 1"
+---
+title: "Worklog Tuần 1"
 date: 2026-04-24
 weight: 1
 chapter: false
@@ -7,37 +7,37 @@ pre: " <b> 1.1. </b> "
 ---
 
 
-### Má»¥c tiÃªu Tuáº§n 1:
+### Mục tiêu Tuần 1:
 
-* Káº¿t ná»‘i vÃ  lÃ m quen vá»›i cÃ¡c thÃ nh viÃªn cá»§a First Cloud Journey (FCJ).
-* Hiá»ƒu cÃ¡c dá»‹ch vá»¥ AWS cÆ¡ báº£n, cÃ¡ch sá»­ dá»¥ng Console & CLI.
+* Kết nối và làm quen với các thành viên của First Cloud Journey (FCJ).
+* Hiểu các dịch vụ AWS cơ bản, cách sử dụng Console & CLI.
 
-### CÃ¡c nhiá»‡m vá»¥ thá»±c hiá»‡n trong tuáº§n nÃ y:
-| Thá»© | Nhiá»‡m vá»¥ | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | TÃ i liá»‡u tham kháº£o |
+### Các nhiệm vụ thực hiện trong tuần này:
+| Thứ | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 6   | - Tham gia sá»± kiá»‡n kickoff AWS vÃ  lÃ m quen vá»›i cÃ¡c thÃ nh viÃªn FCJ <br> - Äá»c vÃ  ghi chÃº cÃ¡c quy táº¯c, quy Ä‘á»‹nh cá»§a Ä‘Æ¡n vá»‹ thá»±c táº­p.                                                                                       | 17/04/2026 | 17/04/2026      | 
-| 2   | - TÃ¬m hiá»ƒu vá» AWS vÃ  cÃ¡c quy táº¯c, quy Ä‘á»‹nh dÃ nh cho thá»±c táº­p sinh.                                                                                           | 20/04/2026 | 20/04/2026      |
-| 3   | - Äá»c giá»›i thiá»‡u sÆ¡ lÆ°á»£c vá» cÃ¡c loáº¡i dá»‹ch vá»¥ phá»• biáº¿n cá»§a AWS: <br>&emsp; + TÃ­nh toÃ¡n (Compute) <br>&emsp; + LÆ°u trá»¯ (Storage) <br>&emsp; + Máº¡ng (Networking) <br>&emsp; + CÆ¡ sá»Ÿ dá»¯ liá»‡u (Database) <br>&emsp; + ... | 21/04/2026 | 21/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Táº¡o tÃ i khoáº£n AWS Free Tier <br> - TÃ¬m hiá»ƒu kiáº¿n thá»©c cÆ¡ báº£n vá» AWS Console <br> - **Thá»±c hÃ nh:** <br>&emsp; + Táº¡o tÃ i khoáº£n AWS <br>&emsp; + HoÃ n thÃ nh 5 bÃ i lab khuyáº¿n mÃ£i AWS trá»‹ giÃ¡ $100 (bÃ i táº­p 1 vÃ  2).       | 22/04/2026 | 22/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tiáº¿p tá»¥c thá»±c hiá»‡n vÃ  hoÃ n thÃ nh 5 bÃ i táº­p khuyáº¿n mÃ£i AWS trá»‹ giÃ¡ $100 (bÃ i táº­p 3, 4 vÃ  5).                                                                                             | 23/04/2026 | 23/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - TÃ¬m hiá»ƒu vá» AWS Budgets vÃ  AWS Support <br> - **Thá»±c hÃ nh:** <br>&emsp; + Thiáº¿t láº­p ngÃ¢n sÃ¡ch Ä‘á»ƒ quáº£n lÃ½ chi phÃ­ <br>&emsp; + Táº¡o case gá»­i cho bá»™ pháº­n Support (xÃ¡c minh sá»‘ Ä‘iá»‡n thoáº¡i cho tÃ i khoáº£n).                | 24/04/2026 | 24/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tham gia sự kiện kickoff AWS và làm quen với các thành viên FCJ <br> - Đọc và ghi chú các quy tắc, quy định của đơn vị thực tập.                                                                                       | 17/04/2026 | 17/04/2026      | 
+| 2   | - Tìm hiểu về AWS và các quy tắc, quy định dành cho thực tập sinh.                                                                                           | 20/04/2026 | 20/04/2026      |
+| 3   | - Đọc giới thiệu sơ lược về các loại dịch vụ phổ biến của AWS: <br>&emsp; + Tính toán (Compute) <br>&emsp; + Lưu trữ (Storage) <br>&emsp; + Mạng (Networking) <br>&emsp; + Cơ sở dữ liệu (Database) <br>&emsp; + ... | 21/04/2026 | 21/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tạo tài khoản AWS Free Tier <br> - Tìm hiểu kiến thức cơ bản về AWS Console <br> - **Thực hành:** <br>&emsp; + Tạo tài khoản AWS <br>&emsp; + Hoàn thành 5 bài lab khuyến mãi AWS trị giá $100 (bài tập 1 và 2).       | 22/04/2026 | 22/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tiếp tục thực hiện và hoàn thành 5 bài tập khuyến mãi AWS trị giá $100 (bài tập 3, 4 và 5).                                                                                             | 23/04/2026 | 23/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tìm hiểu về AWS Budgets và AWS Support <br> - **Thực hành:** <br>&emsp; + Thiết lập ngân sách để quản lý chi phí <br>&emsp; + Tạo case gửi cho bộ phận Support (xác minh số điện thoại cho tài khoản).                | 24/04/2026 | 24/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c trong Tuáº§n 1:
-* Hiá»ƒu rÃµ vá» vÄƒn hÃ³a, phÆ°Æ¡ng phÃ¡p lÃ m viá»‡c vÃ  quy Ä‘á»‹nh thá»±c táº­p cá»§a AWS, Ä‘á»“ng thá»i lÃ m quen vá»›i cÃ¡c thÃ nh viÃªn FCJ.
+### Kết quả đạt được trong Tuần 1:
+* Hiểu rõ về văn hóa, phương pháp làm việc và quy định thực tập của AWS, đồng thời làm quen với các thành viên FCJ.
 
-* CÃ³ Ä‘Æ°á»£c kiáº¿n thá»©c cÆ¡ báº£n vá» AWS lÃ  gÃ¬ vÃ  cÃ¡c nhÃ³m dá»‹ch vá»¥ cá»‘t lÃµi cá»§a nÃ³:
+* Có được kiến thức cơ bản về AWS là gì và các nhóm dịch vụ cốt lõi của nó:
 
-  * TÃ­nh toÃ¡n (Computing)
-  * LÆ°u trá»¯ (Storage)
-  * Máº¡ng (Networking)
-  * CÆ¡ sá»Ÿ dá»¯ liá»‡u (Databases)
+  * Tính toán (Computing)
+  * Lưu trữ (Storage)
+  * Mạng (Networking)
+  * Cơ sở dữ liệu (Databases)
   * ...
 
-* Khá»Ÿi táº¡o vÃ  cáº¥u hÃ¬nh thÃ nh cÃ´ng tÃ i khoáº£n AWS Free Tier.
+* Khởi tạo và cấu hình thành công tài khoản AWS Free Tier.
 
-* LÃ m quen vá»›i Giao diá»‡n quáº£n lÃ½ AWS (Management Console).
+* Làm quen với Giao diện quản lý AWS (Management Console).
 
-* HoÃ n thÃ nh táº¥t cáº£ 5 bÃ i lab khuyáº¿n mÃ£i trá»‹ giÃ¡ $100 cá»§a AWS.
+* Hoàn thành tất cả 5 bài lab khuyến mãi trị giá $100 của AWS.
 
-* CÃ³ kháº£ nÄƒng thiáº¿t láº­p ngÃ¢n sÃ¡ch Ä‘á»ƒ quáº£n lÃ½ chi phÃ­ vÃ  táº¡o bÃ¡o cÃ¡o yÃªu cáº§u há»— trá»£ cho cÃ¡c váº¥n Ä‘á» gáº·p pháº£i.
+* Có khả năng thiết lập ngân sách để quản lý chi phí và tạo báo cáo yêu cầu hỗ trợ cho các vấn đề gặp phải.

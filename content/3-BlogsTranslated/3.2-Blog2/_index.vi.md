@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Blog 2"
 date: 2026-07-05
 weight: 2
@@ -7,252 +7,252 @@ pre: " <b> 3.2. </b> "
 ---
 
 
-# Táº¡o tráº£i nghiá»‡m xÃ¡c thá»±c hiá»‡u quáº£ vá»›i Amazon Cognito vÃ  Authsignal
+# Tạo trải nghiệm xác thực hiệu quả với Amazon Cognito và Authsignal
 
-Trong cÃ¡c á»©ng dá»¥ng sá»‘ hiá»‡n nay, xÃ¡c thá»±c ngÆ°á»i dÃ¹ng lÃ  má»™t pháº§n ráº¥t quan trá»ng trong hÃ nh trÃ¬nh sá»­ dá»¥ng há»‡ thá»‘ng. XÃ¡c thá»±c giÃºp báº£o vá»‡ tÃ i khoáº£n ngÆ°á»i dÃ¹ng, thÃ´ng tin cÃ¡ nhÃ¢n, dá»¯ liá»‡u tÃ i chÃ­nh vÃ  cÃ¡c tÃ i nguyÃªn nháº¡y cáº£m khÃ¡c. Tuy nhiÃªn, báº£o máº­t máº¡nh Ä‘Ã´i khi láº¡i lÃ m tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng trá»Ÿ nÃªn phá»©c táº¡p vÃ  khÃ³ chá»‹u.
+Trong các ứng dụng số hiện nay, xác thực người dùng là một phần rất quan trọng trong hành trình sử dụng hệ thống. Xác thực giúp bảo vệ tài khoản người dùng, thông tin cá nhân, dữ liệu tài chính và các tài nguyên nhạy cảm khác. Tuy nhiên, bảo mật mạnh đôi khi lại làm trải nghiệm người dùng trở nên phức tạp và khó chịu.
 
-Nhiá»u á»©ng dá»¥ng sá»­ dá»¥ng xÃ¡c thá»±c Ä‘a yáº¿u tá»‘, hay MFA, Ä‘á»ƒ tÄƒng cÆ°á»ng báº£o máº­t. MFA cÃ³ thá»ƒ bao gá»“m SMS OTP, email OTP, á»©ng dá»¥ng xÃ¡c thá»±c, sinh tráº¯c há»c, passkey hoáº·c khÃ³a báº£o máº­t pháº§n cá»©ng. Máº·c dÃ¹ MFA giÃºp tÄƒng má»©c Ä‘á»™ báº£o vá»‡, viá»‡c báº¯t buá»™c ngÆ°á»i dÃ¹ng xÃ¡c thá»±c nhiá»u lá»›p á»Ÿ má»i láº§n Ä‘Äƒng nháº­p hoáº·c má»i thao tÃ¡c cÃ³ thá»ƒ táº¡o ra tráº£i nghiá»‡m khÃ´ng tá»‘t.
+Nhiều ứng dụng sử dụng xác thực đa yếu tố, hay MFA, để tăng cường bảo mật. MFA có thể bao gồm SMS OTP, email OTP, ứng dụng xác thực, sinh trắc học, passkey hoặc khóa bảo mật phần cứng. Mặc dù MFA giúp tăng mức độ bảo vệ, việc bắt buộc người dùng xác thực nhiều lớp ở mọi lần đăng nhập hoặc mọi thao tác có thể tạo ra trải nghiệm không tốt.
 
-BÃ i viáº¿t AWS **â€œCreating great authentication experiences with Amazon Cognito and Authsignalâ€** giáº£i thÃ­ch cÃ¡ch Amazon Cognito vÃ  Authsignal cÃ³ thá»ƒ káº¿t há»£p Ä‘á»ƒ táº¡o ra tráº£i nghiá»‡m xÃ¡c thá»±c tá»‘t hÆ¡n. Ã tÆ°á»Ÿng chÃ­nh lÃ  cÃ¢n báº±ng giá»¯a báº£o máº­t vÃ  tÃ­nh tiá»‡n lá»£i báº±ng cÃ¡ch sá»­ dá»¥ng xÃ¡c thá»±c thÃ­ch á»©ng, tÃ­n hiá»‡u rá»§i ro, xÃ¡c thá»±c liÃªn tá»¥c vÃ  cÃ¡c phÆ°Æ¡ng thá»©c xÃ¡c thá»±c linh hoáº¡t.
+Bài viết AWS **“Creating great authentication experiences with Amazon Cognito and Authsignal”** giải thích cách Amazon Cognito và Authsignal có thể kết hợp để tạo ra trải nghiệm xác thực tốt hơn. Ý tưởng chính là cân bằng giữa bảo mật và tính tiện lợi bằng cách sử dụng xác thực thích ứng, tín hiệu rủi ro, xác thực liên tục và các phương thức xác thực linh hoạt.
 
-Thay vÃ¬ Ã¡p dá»¥ng cÃ¹ng má»™t yÃªu cáº§u xÃ¡c thá»±c cho má»i ngÆ°á»i dÃ¹ng vÃ  má»i tÃ¬nh huá»‘ng, há»‡ thá»‘ng cÃ³ thá»ƒ Ä‘Ã¡nh giÃ¡ rá»§i ro rá»“i Ã¡p dá»¥ng má»©c xÃ¡c thá»±c phÃ¹ há»£p vÃ o Ä‘Ãºng thá»i Ä‘iá»ƒm.
+Thay vì áp dụng cùng một yêu cầu xác thực cho mọi người dùng và mọi tình huống, hệ thống có thể đánh giá rủi ro rồi áp dụng mức xác thực phù hợp vào đúng thời điểm.
 
-## 1. ThÃ¡ch thá»©c cá»§a tráº£i nghiá»‡m xÃ¡c thá»±c
+## 1. Thách thức của trải nghiệm xác thực
 
-XÃ¡c thá»±c cÃ³ hai má»¥c tiÃªu thÆ°á»ng cáº¡nh tranh vá»›i nhau:
+Xác thực có hai mục tiêu thường cạnh tranh với nhau:
 
-- Báº£o vá»‡ á»©ng dá»¥ng khá»i truy cáº­p trÃ¡i phÃ©p.
-- Giá»¯ tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng Ä‘Æ¡n giáº£n vÃ  thuáº­n tiá»‡n.
+- Bảo vệ ứng dụng khỏi truy cập trái phép.
+- Giữ trải nghiệm người dùng đơn giản và thuận tiện.
 
-Náº¿u xÃ¡c thá»±c quÃ¡ yáº¿u, káº» táº¥n cÃ´ng cÃ³ thá»ƒ truy cáº­p vÃ o tÃ i khoáº£n ngÆ°á»i dÃ¹ng. Náº¿u xÃ¡c thá»±c quÃ¡ nghiÃªm ngáº·t, ngÆ°á»i dÃ¹ng tháº­t cÃ³ thá»ƒ cáº£m tháº¥y phiá»n vÃ  rá»i bá» á»©ng dá»¥ng. VÃ­ dá»¥, náº¿u ngÆ°á»i dÃ¹ng pháº£i nháº­p OTP má»—i láº§n má»Ÿ á»©ng dá»¥ng, quy trÃ¬nh sáº½ trá»Ÿ nÃªn cháº­m vÃ  láº·p láº¡i quÃ¡ nhiá»u láº§n.
+Nếu xác thực quá yếu, kẻ tấn công có thể truy cập vào tài khoản người dùng. Nếu xác thực quá nghiêm ngặt, người dùng thật có thể cảm thấy phiền và rời bỏ ứng dụng. Ví dụ, nếu người dùng phải nhập OTP mỗi lần mở ứng dụng, quy trình sẽ trở nên chậm và lặp lại quá nhiều lần.
 
-Váº¥n Ä‘á» nÃ y trá»Ÿ nÃªn rÃµ hÆ¡n khi á»©ng dá»¥ng má»Ÿ rá»™ng. Má»™t há»‡ thá»‘ng lá»›n cÃ³ thá»ƒ phá»¥c vá»¥ nhiá»u ngÆ°á»i dÃ¹ng trÃªn nhiá»u thiáº¿t bá»‹, vá»‹ trÃ­ vÃ  thÃ³i quen sá»­ dá»¥ng khÃ¡c nhau. Má»™t sá»‘ láº§n Ä‘Äƒng nháº­p cÃ³ rá»§i ro tháº¥p, trong khi má»™t sá»‘ láº§n khÃ¡c láº¡i Ä‘Ã¡ng nghi ngá». Náº¿u má»i láº§n Ä‘Äƒng nháº­p Ä‘á»u bá»‹ xem lÃ  rá»§i ro nhÆ° nhau, há»‡ thá»‘ng sáº½ táº¡o ra rÃ o cáº£n khÃ´ng cáº§n thiáº¿t.
+Vấn đề này trở nên rõ hơn khi ứng dụng mở rộng. Một hệ thống lớn có thể phục vụ nhiều người dùng trên nhiều thiết bị, vị trí và thói quen sử dụng khác nhau. Một số lần đăng nhập có rủi ro thấp, trong khi một số lần khác lại đáng nghi ngờ. Nếu mọi lần đăng nhập đều bị xem là rủi ro như nhau, hệ thống sẽ tạo ra rào cản không cần thiết.
 
-CÃ¡ch tiáº¿p cáº­n tá»‘t hÆ¡n lÃ  Ä‘Ã¡nh giÃ¡ theo ngá»¯ cáº£nh. Há»‡ thá»‘ng nÃªn Ä‘áº·t ra cÃ¡c cÃ¢u há»i:
+Cách tiếp cận tốt hơn là đánh giá theo ngữ cảnh. Hệ thống nên đặt ra các câu hỏi:
 
-- ÄÃ¢y cÃ³ pháº£i thiáº¿t bá»‹ quen thuá»™c khÃ´ng?
-- Vá»‹ trÃ­ Ä‘Äƒng nháº­p cÃ³ bÃ¬nh thÆ°á»ng khÃ´ng?
-- HÃ nh vi ngÆ°á»i dÃ¹ng cÃ³ quen thuá»™c khÃ´ng?
-- HÃ nh Ä‘á»™ng nÃ y cÃ³ rá»§i ro tháº¥p hay cao?
-- Sá»‘ tiá»n giao dá»‹ch cÃ³ báº¥t thÆ°á»ng khÃ´ng?
-- NgÆ°á»i dÃ¹ng cÃ³ Ä‘ang truy cáº­p dá»¯ liá»‡u nháº¡y cáº£m khÃ´ng?
+- Đây có phải thiết bị quen thuộc không?
+- Vị trí đăng nhập có bình thường không?
+- Hành vi người dùng có quen thuộc không?
+- Hành động này có rủi ro thấp hay cao?
+- Số tiền giao dịch có bất thường không?
+- Người dùng có đang truy cập dữ liệu nhạy cảm không?
 
-Dá»±a trÃªn cÃ¡c thÃ´ng tin nÃ y, há»‡ thá»‘ng cÃ³ thá»ƒ quyáº¿t Ä‘á»‹nh cho ngÆ°á»i dÃ¹ng tiáº¿p tá»¥c bÃ¬nh thÆ°á»ng hoáº·c yÃªu cáº§u thÃªm má»™t bÆ°á»›c xÃ¡c thá»±c.
+Dựa trên các thông tin này, hệ thống có thể quyết định cho người dùng tiếp tục bình thường hoặc yêu cầu thêm một bước xác thực.
 
-## 2. XÃ¡c thá»±c thÃ­ch á»©ng lÃ  gÃ¬?
+## 2. Xác thực thích ứng là gì?
 
-XÃ¡c thá»±c thÃ­ch á»©ng lÃ  chiáº¿n lÆ°á»£c xÃ¡c thá»±c thay Ä‘á»•i dá»±a trÃªn má»©c Ä‘á»™ rá»§i ro. Thay vÃ¬ yÃªu cáº§u cÃ¹ng má»™t bÆ°á»›c báº£o máº­t cho má»i tÃ¬nh huá»‘ng, há»‡ thá»‘ng phÃ¢n tÃ­ch ngá»¯ cáº£nh vÃ  quyáº¿t Ä‘á»‹nh má»©c xÃ¡c thá»±c cáº§n thiáº¿t.
+Xác thực thích ứng là chiến lược xác thực thay đổi dựa trên mức độ rủi ro. Thay vì yêu cầu cùng một bước bảo mật cho mọi tình huống, hệ thống phân tích ngữ cảnh và quyết định mức xác thực cần thiết.
 
-VÃ­ dá»¥, náº¿u ngÆ°á»i dÃ¹ng Ä‘Äƒng nháº­p tá»« thiáº¿t bá»‹ quen thuá»™c, táº¡i vá»‹ trÃ­ thÆ°á»ng dÃ¹ng vÃ  vÃ o thá»i Ä‘iá»ƒm bÃ¬nh thÆ°á»ng, há»‡ thá»‘ng cÃ³ thá»ƒ cho phÃ©p Ä‘Äƒng nháº­p vá»›i Ã­t ma sÃ¡t hÆ¡n. NgÆ°á»£c láº¡i, náº¿u cÃ¹ng ngÆ°á»i dÃ¹ng Ä‘Ã³ Ä‘Äƒng nháº­p tá»« thiáº¿t bá»‹ má»›i, vá»‹ trÃ­ báº¥t thÆ°á»ng hoáº·c thá»i Ä‘iá»ƒm khÃ¡c thÆ°á»ng, há»‡ thá»‘ng cÃ³ thá»ƒ yÃªu cáº§u MFA.
+Ví dụ, nếu người dùng đăng nhập từ thiết bị quen thuộc, tại vị trí thường dùng và vào thời điểm bình thường, hệ thống có thể cho phép đăng nhập với ít ma sát hơn. Ngược lại, nếu cùng người dùng đó đăng nhập từ thiết bị mới, vị trí bất thường hoặc thời điểm khác thường, hệ thống có thể yêu cầu MFA.
 
-VÃ­ dá»¥ Ä‘Æ¡n giáº£n:
-
-```text
-ÄÄƒng nháº­p rá»§i ro tháº¥p:
-Thiáº¿t bá»‹ quen + vá»‹ trÃ­ thÆ°á»ng dÃ¹ng + hÃ nh vi bÃ¬nh thÆ°á»ng
-â†’ Cho phÃ©p truy cáº­p vá»›i Ã­t rÃ o cáº£n
-
-ÄÄƒng nháº­p rá»§i ro cao:
-Thiáº¿t bá»‹ láº¡ + vá»‹ trÃ­ báº¥t thÆ°á»ng + hÃ nh vi khÃ´ng bÃ¬nh thÆ°á»ng
-â†’ YÃªu cáº§u xÃ¡c thá»±c bá»• sung
-```
-
-CÃ¡ch tiáº¿p cáº­n nÃ y cáº£i thiá»‡n cáº£ báº£o máº­t vÃ  tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng. NgÆ°á»i dÃ¹ng á»Ÿ tÃ¬nh huá»‘ng rá»§i ro tháº¥p khÃ´ng bá»‹ lÃ m phiá»n khÃ´ng cáº§n thiáº¿t, cÃ²n cÃ¡c tÃ¬nh huá»‘ng rá»§i ro cao sáº½ Ä‘Æ°á»£c báº£o vá»‡ máº¡nh hÆ¡n.
-
-XÃ¡c thá»±c thÃ­ch á»©ng Ä‘áº·c biá»‡t há»¯u Ã­ch cho cÃ¡c á»©ng dá»¥ng cáº§n báº£o máº­t máº¡nh nhÆ°ng váº«n quan tÃ¢m Ä‘áº¿n tá»· lá»‡ chuyá»ƒn Ä‘á»•i, giá»¯ chÃ¢n ngÆ°á»i dÃ¹ng vÃ  sá»± hÃ i lÃ²ng khi sá»­ dá»¥ng.
-
-## 3. CÃ¡c tÃ­n hiá»‡u rá»§i ro trong xÃ¡c thá»±c
-
-TÃ­n hiá»‡u rá»§i ro lÃ  nhá»¯ng thÃ´ng tin theo ngá»¯ cáº£nh giÃºp há»‡ thá»‘ng hiá»ƒu má»™t láº§n xÃ¡c thá»±c lÃ  bÃ¬nh thÆ°á»ng hay Ä‘Ã¡ng nghi ngá». Nhá»¯ng tÃ­n hiá»‡u nÃ y cÃ³ thá»ƒ Ä‘áº¿n tá»« thiáº¿t bá»‹, máº¡ng, hÃ nh vi ngÆ°á»i dÃ¹ng, thÃ´ng tin giao dá»‹ch hoáº·c ngá»¯ cáº£nh á»©ng dá»¥ng.
-
-CÃ¡c tÃ­n hiá»‡u rá»§i ro phá»• biáº¿n gá»“m:
-
-### TÃ­n hiá»‡u thiáº¿t bá»‹
-
-TÃ­n hiá»‡u thiáº¿t bá»‹ giÃºp xÃ¡c Ä‘á»‹nh ngÆ°á»i dÃ¹ng cÃ³ Ä‘ang dÃ¹ng thiáº¿t bá»‹ quen thuá»™c hay khÃ´ng. Há»‡ thá»‘ng cÃ³ thá»ƒ kiá»ƒm tra fingerprint cá»§a trÃ¬nh duyá»‡t, ID thiáº¿t bá»‹, há»‡ Ä‘iá»u hÃ nh, loáº¡i trÃ¬nh duyá»‡t hoáº·c lá»‹ch sá»­ sá»­ dá»¥ng thiáº¿t bá»‹.
-
-Náº¿u ngÆ°á»i dÃ¹ng Ä‘Äƒng nháº­p tá»« thiáº¿t bá»‹ Ä‘Ã£ sá»­ dá»¥ng nhiá»u láº§n trÆ°á»›c Ä‘Ã³, rá»§i ro cÃ³ thá»ƒ tháº¥p hÆ¡n. Náº¿u ngÆ°á»i dÃ¹ng Ä‘Äƒng nháº­p tá»« thiáº¿t bá»‹ hoÃ n toÃ n má»›i, há»‡ thá»‘ng cÃ³ thá»ƒ xem request nÃ y lÃ  rá»§i ro cao hÆ¡n.
-
-### TÃ­n hiá»‡u vá»‹ trÃ­
-
-TÃ­n hiá»‡u vá»‹ trÃ­ giÃºp phÃ¡t hiá»‡n cÃ¡c máº«u truy cáº­p báº¥t thÆ°á»ng. VÃ­ dá»¥, náº¿u ngÆ°á»i dÃ¹ng vá»«a Ä‘Äƒng nháº­p á»Ÿ Viá»‡t Nam rá»“i vÃ i phÃºt sau láº¡i Ä‘Äƒng nháº­p á»Ÿ má»™t quá»‘c gia ráº¥t xa, há»‡ thá»‘ng cÃ³ thá»ƒ xem Ä‘Ã¢y lÃ  dáº¥u hiá»‡u Ä‘Ã¡ng ngá».
-
-TrÆ°á»ng há»£p nÃ y thÆ°á»ng Ä‘Æ°á»£c gá»i lÃ  impossible travel. NÃ³ cho tháº¥y tÃ i khoáº£n cÃ³ thá»ƒ Ä‘Ã£ bá»‹ xÃ¢m nháº­p hoáº·c má»™t trong cÃ¡c láº§n Ä‘Äƒng nháº­p khÃ´ng thuá»™c vá» ngÆ°á»i dÃ¹ng tháº­t.
-
-### TÃ­n hiá»‡u hÃ nh vi
-
-TÃ­n hiá»‡u hÃ nh vi bao gá»“m tá»‘c Ä‘á»™ Ä‘Äƒng nháº­p, táº§n suáº¥t Ä‘Äƒng nháº­p, thá»i Ä‘iá»ƒm truy cáº­p, cÃ¡ch di chuyá»ƒn trong á»©ng dá»¥ng vÃ  cÃ¡c thÃ³i quen sá»­ dá»¥ng khÃ¡c. Náº¿u ngÆ°á»i dÃ¹ng thÆ°á»ng Ä‘Äƒng nháº­p trong giá» lÃ m viá»‡c nhÆ°ng Ä‘á»™t nhiÃªn Ä‘Äƒng nháº­p nhiá»u láº§n lÃºc ná»­a Ä‘Ãªm, há»‡ thá»‘ng cÃ³ thá»ƒ tÄƒng Ä‘iá»ƒm rá»§i ro.
-
-PhÃ¢n tÃ­ch hÃ nh vi giÃºp há»‡ thá»‘ng xÃ¡c thá»±c thÃ´ng minh hÆ¡n vÃ¬ nÃ³ khÃ´ng chá»‰ kiá»ƒm tra danh tÃ­nh táº¡i má»™t thá»i Ä‘iá»ƒm. Há»‡ thá»‘ng cÃ²n quan sÃ¡t cÃ¡ch ngÆ°á»i dÃ¹ng thÆ°á»ng tÆ°Æ¡ng tÃ¡c vá»›i á»©ng dá»¥ng.
-
-### TÃ­n hiá»‡u giao dá»‹ch
-
-Má»™t sá»‘ hÃ nh Ä‘á»™ng cÃ³ má»©c rá»§i ro cao hÆ¡n cÃ¡c hÃ nh Ä‘á»™ng khÃ¡c. VÃ­ dá»¥, xem trang thÃ´ng tin cÃ´ng khai cÃ³ thá»ƒ lÃ  rá»§i ro tháº¥p, nhÆ°ng Ä‘á»•i máº­t kháº©u, thÃªm phÆ°Æ¡ng thá»©c thanh toÃ¡n má»›i hoáº·c thá»±c hiá»‡n giao dá»‹ch giÃ¡ trá»‹ lá»›n lÃ  hÃ nh Ä‘á»™ng rá»§i ro cao.
-
-TÃ­n hiá»‡u giao dá»‹ch giÃºp há»‡ thá»‘ng quyáº¿t Ä‘á»‹nh cÃ³ cáº§n xÃ¡c thá»±c nÃ¢ng cáº¥p hay khÃ´ng. Má»™t giao dá»‹ch thÃ´ng thÆ°á»ng cÃ³ thá»ƒ tiáº¿p tá»¥c mÃ  khÃ´ng bá»‹ giÃ¡n Ä‘oáº¡n, cÃ²n giao dá»‹ch cÃ³ giÃ¡ trá»‹ cao hoáº·c báº¥t thÆ°á»ng cÃ³ thá»ƒ yÃªu cáº§u xÃ¡c minh bá»• sung.
-
-## 4. XÃ¡c thá»±c liÃªn tá»¥c sau bÆ°á»›c Ä‘Äƒng nháº­p
-
-Má»™t sai láº§m phá»• biáº¿n trong thiáº¿t káº¿ xÃ¡c thá»±c lÃ  chá»‰ kiá»ƒm tra danh tÃ­nh ngÆ°á»i dÃ¹ng táº¡i thá»i Ä‘iá»ƒm Ä‘Äƒng nháº­p. Sau khi ngÆ°á»i dÃ¹ng Ä‘Äƒng nháº­p thÃ nh cÃ´ng, há»‡ thá»‘ng cÃ³ thá»ƒ cho phÃ©p thá»±c hiá»‡n má»i hÃ nh Ä‘á»™ng mÃ  khÃ´ng cáº§n xÃ¡c minh thÃªm. Äiá»u nÃ y cÃ³ thá»ƒ gÃ¢y rá»§i ro.
-
-BÃ i viáº¿t giáº£i thÃ­ch Ã½ tÆ°á»Ÿng xÃ¡c thá»±c liÃªn tá»¥c. Äiá»u nÃ y cÃ³ nghÄ©a lÃ  há»‡ thá»‘ng cÃ³ thá»ƒ Ä‘Ã¡nh giÃ¡ rá»§i ro trong suá»‘t phiÃªn lÃ m viá»‡c cá»§a ngÆ°á»i dÃ¹ng, khÃ´ng chá»‰ á»Ÿ lÃºc Ä‘Äƒng nháº­p.
-
-Äá»‘i vá»›i hÃ nh Ä‘á»™ng rá»§i ro tháº¥p, ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ tiáº¿p tá»¥c bÃ¬nh thÆ°á»ng. Äá»‘i vá»›i hÃ nh Ä‘á»™ng nháº¡y cáº£m hoáº·c rá»§i ro cao, há»‡ thá»‘ng cÃ³ thá»ƒ yÃªu cáº§u xÃ¡c thá»±c máº¡nh hÆ¡n.
-
-VÃ­ dá»¥:
+Ví dụ đơn giản:
 
 ```text
-Xem thÃ´ng tin tÃ i khoáº£n thÃ´ng thÆ°á»ng
-â†’ KhÃ´ng cáº§n xÃ¡c thá»±c thÃªm
+Đăng nhập rủi ro thấp:
+Thiết bị quen + vị trí thường dùng + hành vi bình thường
+→ Cho phép truy cập với ít rào cản
 
-Äá»•i máº­t kháº©u
-â†’ YÃªu cáº§u MFA hoáº·c passkey
-
-ThÃªm phÆ°Æ¡ng thá»©c thanh toÃ¡n má»›i
-â†’ YÃªu cáº§u xÃ¡c thá»±c bá»• sung
-
-Truy cáº­p dá»¯ liá»‡u nháº¡y cáº£m
-â†’ YÃªu cáº§u xÃ¡c thá»±c máº¡nh hÆ¡n
-
-Thá»±c hiá»‡n giao dá»‹ch giÃ¡ trá»‹ cao
-â†’ YÃªu cáº§u step-up authentication
+Đăng nhập rủi ro cao:
+Thiết bị lạ + vị trí bất thường + hành vi không bình thường
+→ Yêu cầu xác thực bổ sung
 ```
 
-MÃ´ hÃ¬nh nÃ y tÄƒng cÆ°á»ng báº£o máº­t vÃ¬ há»‡ thá»‘ng cÃ³ thá»ƒ báº£o vá»‡ cÃ¡c hÃ nh Ä‘á»™ng quan trá»ng ngay cáº£ khi ngÆ°á»i dÃ¹ng Ä‘Ã£ Ä‘Äƒng nháº­p. Äá»“ng thá»i, nÃ³ cÅ©ng cáº£i thiá»‡n tráº£i nghiá»‡m vÃ¬ ngÆ°á»i dÃ¹ng khÃ´ng bá»‹ yÃªu cáº§u xÃ¡c thá»±c thÃªm cho má»i thao tÃ¡c nhá».
+Cách tiếp cận này cải thiện cả bảo mật và trải nghiệm người dùng. Người dùng ở tình huống rủi ro thấp không bị làm phiền không cần thiết, còn các tình huống rủi ro cao sẽ được bảo vệ mạnh hơn.
 
-## 5. Amazon Cognito lÃ  ná»n táº£ng Ä‘á»‹nh danh
+Xác thực thích ứng đặc biệt hữu ích cho các ứng dụng cần bảo mật mạnh nhưng vẫn quan tâm đến tỷ lệ chuyển đổi, giữ chân người dùng và sự hài lòng khi sử dụng.
 
-Amazon Cognito Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ quáº£n lÃ½ xÃ¡c thá»±c vÃ  Ä‘á»‹nh danh ngÆ°á»i dÃ¹ng trong á»©ng dá»¥ng. Dá»‹ch vá»¥ nÃ y cung cáº¥p user pool, Ä‘Äƒng kÃ½, Ä‘Äƒng nháº­p, xÃ¡c thá»±c báº±ng token vÃ  cÃ¡c kháº£ nÄƒng quáº£n lÃ½ ngÆ°á»i dÃ¹ng.
+## 3. Các tín hiệu rủi ro trong xác thực
 
-Trong kiáº¿n trÃºc xÃ¡c thá»±c, Cognito cÃ³ thá»ƒ Ä‘Ã³ng vai trÃ² lÃ  ná»n táº£ng Ä‘á»‹nh danh. NÃ³ lÆ°u trá»¯ vÃ  quáº£n lÃ½ tÃ i khoáº£n ngÆ°á»i dÃ¹ng, xá»­ lÃ½ quy trÃ¬nh Ä‘Äƒng nháº­p ban Ä‘áº§u vÃ  phÃ¡t hÃ nh token Ä‘á»ƒ á»©ng dá»¥ng sá»­ dá»¥ng trong cÃ¡c request.
+Tín hiệu rủi ro là những thông tin theo ngữ cảnh giúp hệ thống hiểu một lần xác thực là bình thường hay đáng nghi ngờ. Những tín hiệu này có thể đến từ thiết bị, mạng, hành vi người dùng, thông tin giao dịch hoặc ngữ cảnh ứng dụng.
 
-Amazon Cognito há»¯u Ã­ch vÃ¬ cung cáº¥p cÃ¡c tÃ­nh nÄƒng Ä‘á»‹nh danh Ä‘Æ°á»£c quáº£n lÃ½ sáºµn, giÃºp Ä‘á»™i ngÅ© phÃ¡t triá»ƒn khÃ´ng cáº§n xÃ¢y dá»±ng toÃ n bá»™ há»‡ thá»‘ng xÃ¡c thá»±c tá»« Ä‘áº§u. á»¨ng dá»¥ng cÃ³ thá»ƒ tÃ­ch há»£p Cognito Ä‘á»ƒ xá»­ lÃ½ Ä‘Äƒng kÃ½, Ä‘Äƒng nháº­p, Ä‘áº·t láº¡i máº­t kháº©u vÃ  quáº£n lÃ½ phiÃªn Ä‘Äƒng nháº­p an toÃ n.
+Các tín hiệu rủi ro phổ biến gồm:
 
-Tuy nhiÃªn, yÃªu cáº§u xÃ¡c thá»±c ngÃ y cÃ ng phá»©c táº¡p. Nhiá»u doanh nghiá»‡p cáº§n xÃ¡c thá»±c thÃ­ch á»©ng, quyáº¿t Ä‘á»‹nh dá»±a trÃªn rá»§i ro, step-up authentication vÃ  nhiá»u phÆ°Æ¡ng thá»©c xÃ¡c thá»±c khÃ¡c nhau. ÄÃ¢y lÃ  nÆ¡i Authsignal cÃ³ thá»ƒ má»Ÿ rá»™ng tráº£i nghiá»‡m xÃ¡c thá»±c.
+### Tín hiệu thiết bị
 
-## 6. Authsignal lÃ  bá»™ phÃ¢n tÃ­ch rá»§i ro vÃ  rules engine
+Tín hiệu thiết bị giúp xác định người dùng có đang dùng thiết bị quen thuộc hay không. Hệ thống có thể kiểm tra fingerprint của trình duyệt, ID thiết bị, hệ điều hành, loại trình duyệt hoặc lịch sử sử dụng thiết bị.
 
-Authsignal cung cáº¥p kháº£ nÄƒng Ä‘iá»u phá»‘i xÃ¡c thá»±c vÃ  há»— trá»£ quyáº¿t Ä‘á»‹nh dá»±a trÃªn rá»§i ro. Dá»‹ch vá»¥ nÃ y cÃ³ thá»ƒ káº¿t há»£p vá»›i Amazon Cognito Ä‘á»ƒ giÃºp á»©ng dá»¥ng táº¡o cÃ¡c luá»“ng xÃ¡c thá»±c thÃ­ch á»©ng vÃ  liÃªn tá»¥c.
+Nếu người dùng đăng nhập từ thiết bị đã sử dụng nhiều lần trước đó, rủi ro có thể thấp hơn. Nếu người dùng đăng nhập từ thiết bị hoàn toàn mới, hệ thống có thể xem request này là rủi ro cao hơn.
 
-Má»™t tÃ­nh nÄƒng quan trá»ng lÃ  rules engine. Rules engine cho phÃ©p quáº£n trá»‹ viÃªn cáº¥u hÃ¬nh cÃ¡c luáº­t báº£o máº­t dá»±a trÃªn ngá»¯ cáº£nh vÃ  yÃªu cáº§u kinh doanh. Thay vÃ¬ viáº¿t cá»©ng toÃ n bá»™ logic xÃ¡c thá»±c trong á»©ng dá»¥ng, tá»• chá»©c cÃ³ thá»ƒ Ä‘á»‹nh nghÄ©a rule linh hoáº¡t hÆ¡n.
+### Tín hiệu vị trí
 
-VÃ­ dá»¥, quáº£n trá»‹ viÃªn cÃ³ thá»ƒ táº¡o cÃ¡c rule nhÆ°:
+Tín hiệu vị trí giúp phát hiện các mẫu truy cập bất thường. Ví dụ, nếu người dùng vừa đăng nhập ở Việt Nam rồi vài phút sau lại đăng nhập ở một quốc gia rất xa, hệ thống có thể xem đây là dấu hiệu đáng ngờ.
+
+Trường hợp này thường được gọi là impossible travel. Nó cho thấy tài khoản có thể đã bị xâm nhập hoặc một trong các lần đăng nhập không thuộc về người dùng thật.
+
+### Tín hiệu hành vi
+
+Tín hiệu hành vi bao gồm tốc độ đăng nhập, tần suất đăng nhập, thời điểm truy cập, cách di chuyển trong ứng dụng và các thói quen sử dụng khác. Nếu người dùng thường đăng nhập trong giờ làm việc nhưng đột nhiên đăng nhập nhiều lần lúc nửa đêm, hệ thống có thể tăng điểm rủi ro.
+
+Phân tích hành vi giúp hệ thống xác thực thông minh hơn vì nó không chỉ kiểm tra danh tính tại một thời điểm. Hệ thống còn quan sát cách người dùng thường tương tác với ứng dụng.
+
+### Tín hiệu giao dịch
+
+Một số hành động có mức rủi ro cao hơn các hành động khác. Ví dụ, xem trang thông tin công khai có thể là rủi ro thấp, nhưng đổi mật khẩu, thêm phương thức thanh toán mới hoặc thực hiện giao dịch giá trị lớn là hành động rủi ro cao.
+
+Tín hiệu giao dịch giúp hệ thống quyết định có cần xác thực nâng cấp hay không. Một giao dịch thông thường có thể tiếp tục mà không bị gián đoạn, còn giao dịch có giá trị cao hoặc bất thường có thể yêu cầu xác minh bổ sung.
+
+## 4. Xác thực liên tục sau bước đăng nhập
+
+Một sai lầm phổ biến trong thiết kế xác thực là chỉ kiểm tra danh tính người dùng tại thời điểm đăng nhập. Sau khi người dùng đăng nhập thành công, hệ thống có thể cho phép thực hiện mọi hành động mà không cần xác minh thêm. Điều này có thể gây rủi ro.
+
+Bài viết giải thích ý tưởng xác thực liên tục. Điều này có nghĩa là hệ thống có thể đánh giá rủi ro trong suốt phiên làm việc của người dùng, không chỉ ở lúc đăng nhập.
+
+Đối với hành động rủi ro thấp, người dùng có thể tiếp tục bình thường. Đối với hành động nhạy cảm hoặc rủi ro cao, hệ thống có thể yêu cầu xác thực mạnh hơn.
+
+Ví dụ:
 
 ```text
-Náº¿u ngÆ°á»i dÃ¹ng Ä‘Äƒng nháº­p tá»« thiáº¿t bá»‹ má»›i
-â†’ YÃªu cáº§u MFA
+Xem thông tin tài khoản thông thường
+→ Không cần xác thực thêm
 
-Náº¿u sá»‘ tiá»n giao dá»‹ch vÆ°á»£t ngÆ°á»¡ng quy Ä‘á»‹nh
-â†’ YÃªu cáº§u xÃ¡c thá»±c máº¡nh hÆ¡n
+Đổi mật khẩu
+→ Yêu cầu MFA hoặc passkey
 
-Náº¿u ngÆ°á»i dÃ¹ng Ä‘á»•i máº­t kháº©u
-â†’ YÃªu cáº§u step-up authentication
+Thêm phương thức thanh toán mới
+→ Yêu cầu xác thực bổ sung
 
-Náº¿u ngÆ°á»i dÃ¹ng dÃ¹ng thiáº¿t bá»‹ tin cáº­y vÃ  vá»‹ trÃ­ rá»§i ro tháº¥p
-â†’ Cho phÃ©p truy cáº­p vá»›i Ã­t rÃ o cáº£n
+Truy cập dữ liệu nhạy cảm
+→ Yêu cầu xác thực mạnh hơn
+
+Thực hiện giao dịch giá trị cao
+→ Yêu cầu step-up authentication
 ```
 
-Äiá»u nÃ y giÃºp cÃ¡c nhÃ³m khÃ´ng chuyÃªn ká»¹ thuáº­t linh hoáº¡t hÆ¡n vÃ¬ há» cÃ³ thá»ƒ Ä‘iá»u chá»‰nh luáº­t báº£o máº­t mÃ  khÃ´ng cáº§n yÃªu cáº§u láº­p trÃ¬nh viÃªn sá»­a code má»—i láº§n.
+Mô hình này tăng cường bảo mật vì hệ thống có thể bảo vệ các hành động quan trọng ngay cả khi người dùng đã đăng nhập. Đồng thời, nó cũng cải thiện trải nghiệm vì người dùng không bị yêu cầu xác thực thêm cho mọi thao tác nhỏ.
 
-Authsignal cÅ©ng há»— trá»£ nhiá»u phÆ°Æ¡ng thá»©c xÃ¡c thá»±c khÃ¡c nhau. TÃ¹y theo má»©c Ä‘á»™ rá»§i ro vÃ  ngá»¯ cáº£nh ngÆ°á»i dÃ¹ng, há»‡ thá»‘ng cÃ³ thá»ƒ chá»n OTP, passkey, sinh tráº¯c há»c hoáº·c cÃ¡c tÃ¹y chá»n xÃ¡c minh khÃ¡c.
+## 5. Amazon Cognito là nền tảng định danh
 
-## 7. Amazon Cognito vÃ  Authsignal phá»‘i há»£p nhÆ° tháº¿ nÃ o?
+Amazon Cognito được sử dụng để quản lý xác thực và định danh người dùng trong ứng dụng. Dịch vụ này cung cấp user pool, đăng ký, đăng nhập, xác thực bằng token và các khả năng quản lý người dùng.
 
-Sá»± káº¿t há»£p giá»¯a Amazon Cognito vÃ  Authsignal táº¡o ra má»™t kiáº¿n trÃºc xÃ¡c thá»±c máº¡nh vÃ  linh hoáº¡t hÆ¡n.
+Trong kiến trúc xác thực, Cognito có thể đóng vai trò là nền tảng định danh. Nó lưu trữ và quản lý tài khoản người dùng, xử lý quy trình đăng nhập ban đầu và phát hành token để ứng dụng sử dụng trong các request.
 
-Má»™t luá»“ng Ä‘Æ¡n giáº£n cÃ³ thá»ƒ mÃ´ táº£ nhÆ° sau:
+Amazon Cognito hữu ích vì cung cấp các tính năng định danh được quản lý sẵn, giúp đội ngũ phát triển không cần xây dựng toàn bộ hệ thống xác thực từ đầu. Ứng dụng có thể tích hợp Cognito để xử lý đăng ký, đăng nhập, đặt lại mật khẩu và quản lý phiên đăng nhập an toàn.
+
+Tuy nhiên, yêu cầu xác thực ngày càng phức tạp. Nhiều doanh nghiệp cần xác thực thích ứng, quyết định dựa trên rủi ro, step-up authentication và nhiều phương thức xác thực khác nhau. Đây là nơi Authsignal có thể mở rộng trải nghiệm xác thực.
+
+## 6. Authsignal là bộ phân tích rủi ro và rules engine
+
+Authsignal cung cấp khả năng điều phối xác thực và hỗ trợ quyết định dựa trên rủi ro. Dịch vụ này có thể kết hợp với Amazon Cognito để giúp ứng dụng tạo các luồng xác thực thích ứng và liên tục.
+
+Một tính năng quan trọng là rules engine. Rules engine cho phép quản trị viên cấu hình các luật bảo mật dựa trên ngữ cảnh và yêu cầu kinh doanh. Thay vì viết cứng toàn bộ logic xác thực trong ứng dụng, tổ chức có thể định nghĩa rule linh hoạt hơn.
+
+Ví dụ, quản trị viên có thể tạo các rule như:
 
 ```text
-NgÆ°á»i dÃ¹ng thao tÃ¡c
-â†’ Amazon Cognito xá»­ lÃ½ Ä‘á»‹nh danh vÃ  phiÃªn ngÆ°á»i dÃ¹ng
-â†’ Authsignal Ä‘Ã¡nh giÃ¡ rá»§i ro vÃ  luáº­t nghiá»‡p vá»¥
-â†’ Há»‡ thá»‘ng quyáº¿t Ä‘á»‹nh phÆ°Æ¡ng thá»©c xÃ¡c thá»±c cáº§n thiáº¿t
-â†’ NgÆ°á»i dÃ¹ng hoÃ n thÃ nh xÃ¡c minh náº¿u cáº§n
-â†’ á»¨ng dá»¥ng cho phÃ©p hoáº·c tá»« chá»‘i hÃ nh Ä‘á»™ng
+Nếu người dùng đăng nhập từ thiết bị mới
+→ Yêu cầu MFA
+
+Nếu số tiền giao dịch vượt ngưỡng quy định
+→ Yêu cầu xác thực mạnh hơn
+
+Nếu người dùng đổi mật khẩu
+→ Yêu cầu step-up authentication
+
+Nếu người dùng dùng thiết bị tin cậy và vị trí rủi ro thấp
+→ Cho phép truy cập với ít rào cản
 ```
 
-Amazon Cognito quáº£n lÃ½ lá»›p Ä‘á»‹nh danh ngÆ°á»i dÃ¹ng, cÃ²n Authsignal bá»• sung kháº£ nÄƒng ra quyáº¿t Ä‘á»‹nh thÃ­ch á»©ng vÃ  Ä‘iá»u phá»‘i xÃ¡c thá»±c. Nhá» Ä‘Ã³, há»‡ thá»‘ng cÃ³ thá»ƒ cÃ¢n báº±ng tá»‘t hÆ¡n giá»¯a báº£o máº­t tÃ i khoáº£n vÃ  sá»± tiá»‡n lá»£i cho ngÆ°á»i dÃ¹ng.
+Điều này giúp các nhóm không chuyên kỹ thuật linh hoạt hơn vì họ có thể điều chỉnh luật bảo mật mà không cần yêu cầu lập trình viên sửa code mỗi lần.
 
-Sá»± káº¿t há»£p nÃ y há»¯u Ã­ch vÃ¬ khÃ´ng pháº£i má»i hÃ nh Ä‘á»™ng cá»§a ngÆ°á»i dÃ¹ng Ä‘á»u cáº§n cÃ¹ng má»™t má»©c báº£o máº­t. Há»‡ thá»‘ng cÃ³ thá»ƒ Ä‘Æ¡n giáº£n vá»›i cÃ¡c thao tÃ¡c rá»§i ro tháº¥p vÃ  nghiÃªm ngáº·t hÆ¡n vá»›i cÃ¡c thao tÃ¡c rá»§i ro cao.
+Authsignal cũng hỗ trợ nhiều phương thức xác thực khác nhau. Tùy theo mức độ rủi ro và ngữ cảnh người dùng, hệ thống có thể chọn OTP, passkey, sinh trắc học hoặc các tùy chọn xác minh khác.
 
-## 8. PhÆ°Æ¡ng thá»©c xÃ¡c thá»±c vÃ  tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng
+## 7. Amazon Cognito và Authsignal phối hợp như thế nào?
 
-Má»™t tráº£i nghiá»‡m xÃ¡c thá»±c tá»‘t nÃªn cung cáº¥p nhiá»u tÃ¹y chá»n xÃ¡c minh. NgÆ°á»i dÃ¹ng á»Ÿ cÃ¡c khu vá»±c khÃ¡c nhau hoáº·c nhÃ³m ngÆ°á»i dÃ¹ng khÃ¡c nhau cÃ³ thá»ƒ Æ°a thÃ­ch cÃ¡c phÆ°Æ¡ng thá»©c khÃ¡c nhau.
+Sự kết hợp giữa Amazon Cognito và Authsignal tạo ra một kiến trúc xác thực mạnh và linh hoạt hơn.
 
-CÃ¡c phÆ°Æ¡ng thá»©c xÃ¡c thá»±c phá»• biáº¿n gá»“m:
+Một luồng đơn giản có thể mô tả như sau:
+
+```text
+Người dùng thao tác
+→ Amazon Cognito xử lý định danh và phiên người dùng
+→ Authsignal đánh giá rủi ro và luật nghiệp vụ
+→ Hệ thống quyết định phương thức xác thực cần thiết
+→ Người dùng hoàn thành xác minh nếu cần
+→ Ứng dụng cho phép hoặc từ chối hành động
+```
+
+Amazon Cognito quản lý lớp định danh người dùng, còn Authsignal bổ sung khả năng ra quyết định thích ứng và điều phối xác thực. Nhờ đó, hệ thống có thể cân bằng tốt hơn giữa bảo mật tài khoản và sự tiện lợi cho người dùng.
+
+Sự kết hợp này hữu ích vì không phải mọi hành động của người dùng đều cần cùng một mức bảo mật. Hệ thống có thể đơn giản với các thao tác rủi ro thấp và nghiêm ngặt hơn với các thao tác rủi ro cao.
+
+## 8. Phương thức xác thực và trải nghiệm người dùng
+
+Một trải nghiệm xác thực tốt nên cung cấp nhiều tùy chọn xác minh. Người dùng ở các khu vực khác nhau hoặc nhóm người dùng khác nhau có thể ưa thích các phương thức khác nhau.
+
+Các phương thức xác thực phổ biến gồm:
 
 - SMS OTP
 - Email OTP
-- á»¨ng dá»¥ng xÃ¡c thá»±c
+- Ứng dụng xác thực
 - WhatsApp OTP
 - Push notification
 - Passkeys
-- Sinh tráº¯c há»c
-- KhÃ³a báº£o máº­t pháº§n cá»©ng
+- Sinh trắc học
+- Khóa bảo mật phần cứng
 - Liveness detection
 
-Má»—i phÆ°Æ¡ng thá»©c Ä‘á»u cÃ³ Æ°u vÃ  nhÆ°á»£c Ä‘iá»ƒm riÃªng. SMS OTP quen thuá»™c nhÆ°ng cÃ³ thá»ƒ bá»‹ áº£nh hÆ°á»Ÿng bá»Ÿi táº¥n cÃ´ng SIM swap. Email OTP dá»… sá»­ dá»¥ng nhÆ°ng phá»¥ thuá»™c vÃ o Ä‘á»™ an toÃ n cá»§a tÃ i khoáº£n email. Passkey vÃ  sinh tráº¯c há»c cÃ³ thá»ƒ mang láº¡i má»©c báº£o vá»‡ máº¡nh hÆ¡n vÃ  tráº£i nghiá»‡m mÆ°á»£t hÆ¡n, nhÆ°ng má»©c Ä‘á»™ Ã¡p dá»¥ng cÃ²n phá»¥ thuá»™c vÃ o thiáº¿t bá»‹ vÃ  thÃ³i quen ngÆ°á»i dÃ¹ng.
+Mỗi phương thức đều có ưu và nhược điểm riêng. SMS OTP quen thuộc nhưng có thể bị ảnh hưởng bởi tấn công SIM swap. Email OTP dễ sử dụng nhưng phụ thuộc vào độ an toàn của tài khoản email. Passkey và sinh trắc học có thể mang lại mức bảo vệ mạnh hơn và trải nghiệm mượt hơn, nhưng mức độ áp dụng còn phụ thuộc vào thiết bị và thói quen người dùng.
 
-BÃ i viáº¿t nháº¥n máº¡nh ráº±ng xÃ¡c thá»±c khÃ´ng nÃªn lÃ  má»™t mÃ´ hÃ¬nh cá»‘ Ä‘á»‹nh. Tá»• chá»©c cáº§n cÃ³ kháº£ nÄƒng Ä‘iá»u chá»‰nh phÆ°Æ¡ng thá»©c xÃ¡c thá»±c dá»±a trÃªn rá»§i ro, chi phÃ­ vÃ  nhu cáº§u ngÆ°á»i dÃ¹ng.
+Bài viết nhấn mạnh rằng xác thực không nên là một mô hình cố định. Tổ chức cần có khả năng điều chỉnh phương thức xác thực dựa trên rủi ro, chi phí và nhu cầu người dùng.
 
-VÃ­ dá»¥, doanh nghiá»‡p cÃ³ thá»ƒ chá»n WhatsApp OTP á»Ÿ má»™t sá»‘ khu vá»±c Ä‘á»ƒ giáº£m chi phÃ­ hoáº·c cáº£i thiá»‡n kháº£ nÄƒng gá»­i mÃ£. Äá»‘i vá»›i hÃ nh Ä‘á»™ng rá»§i ro cao, há»‡ thá»‘ng cÃ³ thá»ƒ yÃªu cáº§u phÆ°Æ¡ng thá»©c máº¡nh hÆ¡n nhÆ° passkey, sinh tráº¯c há»c hoáº·c khÃ³a báº£o máº­t pháº§n cá»©ng.
+Ví dụ, doanh nghiệp có thể chọn WhatsApp OTP ở một số khu vực để giảm chi phí hoặc cải thiện khả năng gửi mã. Đối với hành động rủi ro cao, hệ thống có thể yêu cầu phương thức mạnh hơn như passkey, sinh trắc học hoặc khóa bảo mật phần cứng.
 
-![Blog 2](/TranKhanhTam_AWS_Template/images/3-Blog/Blog-2.png)
+![Blog 2](/images/3-Blog/Blog-2.png)
 
-## 9. Lá»£i Ã­ch cá»§a xÃ¡c thá»±c thÃ­ch á»©ng vÃ  xÃ¡c thá»±c liÃªn tá»¥c
+## 9. Lợi ích của xác thực thích ứng và xác thực liên tục
 
-XÃ¡c thá»±c thÃ­ch á»©ng vÃ  xÃ¡c thá»±c liÃªn tá»¥c Ä‘em láº¡i nhiá»u lá»£i Ã­ch quan trá»ng.
+Xác thực thích ứng và xác thực liên tục đem lại nhiều lợi ích quan trọng.
 
-Thá»© nháº¥t, chÃºng giáº£m ma sÃ¡t cho ngÆ°á»i dÃ¹ng. NgÆ°á»i dÃ¹ng khÃ´ng bá»‹ Ã©p thá»±c hiá»‡n MFA cho má»i hÃ nh Ä‘á»™ng rá»§i ro tháº¥p. Äiá»u nÃ y giÃºp á»©ng dá»¥ng dá»… sá»­ dá»¥ng hÆ¡n vÃ  cáº£i thiá»‡n tráº£i nghiá»‡m tá»•ng thá»ƒ.
+Thứ nhất, chúng giảm ma sát cho người dùng. Người dùng không bị ép thực hiện MFA cho mọi hành động rủi ro thấp. Điều này giúp ứng dụng dễ sử dụng hơn và cải thiện trải nghiệm tổng thể.
 
-Thá»© hai, chÃºng tÄƒng cÆ°á»ng báº£o máº­t. Há»‡ thá»‘ng cÃ³ thá»ƒ yÃªu cáº§u xÃ¡c minh máº¡nh hÆ¡n khi rá»§i ro cao hÆ¡n. Nhá» Ä‘Ã³, má»©c báº£o máº­t Ä‘Æ°á»£c tÄƒng Ä‘Ãºng lÃºc cáº§n thiáº¿t.
+Thứ hai, chúng tăng cường bảo mật. Hệ thống có thể yêu cầu xác minh mạnh hơn khi rủi ro cao hơn. Nhờ đó, mức bảo mật được tăng đúng lúc cần thiết.
 
-Thá»© ba, chÃºng há»— trá»£ sá»± linh hoáº¡t trong kinh doanh. Rule cÃ³ thá»ƒ Ä‘Æ°á»£c Ä‘iá»u chá»‰nh dá»±a trÃªn máº«u gian láº­n, hÃ nh vi ngÆ°á»i dÃ¹ng, yÃªu cáº§u tuÃ¢n thá»§ hoáº·c chÃ­nh sÃ¡ch doanh nghiá»‡p.
+Thứ ba, chúng hỗ trợ sự linh hoạt trong kinh doanh. Rule có thể được điều chỉnh dựa trên mẫu gian lận, hành vi người dùng, yêu cầu tuân thủ hoặc chính sách doanh nghiệp.
 
-Thá»© tÆ°, chÃºng cáº£i thiá»‡n kháº£ nÄƒng kiá»ƒm soÃ¡t váº­n hÃ nh. Vá»›i rules engine vÃ  authentication timeline, quáº£n trá»‹ viÃªn cÃ³ thá»ƒ theo dÃµi hoáº¡t Ä‘á»™ng xÃ¡c thá»±c vÃ  cáº­p nháº­t policy dá»±a trÃªn dá»¯ liá»‡u sá»­ dá»¥ng thá»±c táº¿.
+Thứ tư, chúng cải thiện khả năng kiểm soát vận hành. Với rules engine và authentication timeline, quản trị viên có thể theo dõi hoạt động xác thực và cập nhật policy dựa trên dữ liệu sử dụng thực tế.
 
-Cuá»‘i cÃ¹ng, chÃºng há»— trá»£ phÃ²ng chá»‘ng gian láº­n tá»‘t hÆ¡n. CÃ¡c láº§n Ä‘Äƒng nháº­p Ä‘Ã¡ng ngá», thiáº¿t bá»‹ láº¡, vá»‹ trÃ­ báº¥t thÆ°á»ng vÃ  giao dá»‹ch rá»§i ro cao cÃ³ thá»ƒ tá»± Ä‘á»™ng kÃ­ch hoáº¡t xÃ¡c minh máº¡nh hÆ¡n.
+Cuối cùng, chúng hỗ trợ phòng chống gian lận tốt hơn. Các lần đăng nhập đáng ngờ, thiết bị lạ, vị trí bất thường và giao dịch rủi ro cao có thể tự động kích hoạt xác minh mạnh hơn.
 
-## 10. BÃ i há»c chÃ­nh tá»« bÃ i viáº¿t
+## 10. Bài học chính từ bài viết
 
-BÃ i há»c chÃ­nh tá»« bÃ i viáº¿t lÃ  xÃ¡c thá»±c khÃ´ng nÃªn Ä‘Æ°á»£c thiáº¿t káº¿ nhÆ° má»™t quy trÃ¬nh cá»‘ Ä‘á»‹nh vÃ  cá»©ng nháº¯c. Má»™t tráº£i nghiá»‡m xÃ¡c thá»±c tá»‘t cáº§n thay Ä‘á»•i dá»±a trÃªn ngá»¯ cáº£nh ngÆ°á»i dÃ¹ng, má»©c Ä‘á»™ rá»§i ro vÃ  yÃªu cáº§u kinh doanh.
+Bài học chính từ bài viết là xác thực không nên được thiết kế như một quy trình cố định và cứng nhắc. Một trải nghiệm xác thực tốt cần thay đổi dựa trên ngữ cảnh người dùng, mức độ rủi ro và yêu cầu kinh doanh.
 
-CÃ¡c bÃ i há»c quan trá»ng gá»“m:
+Các bài học quan trọng gồm:
 
-- Báº£o máº­t máº¡nh khÃ´ng pháº£i lÃºc nÃ o cÅ©ng Ä‘á»“ng nghÄ©a vá»›i nhiá»u rÃ o cáº£n.
-- MFA nÃªn Ä‘Æ°á»£c Ã¡p dá»¥ng thÃ´ng minh, khÃ´ng nÃªn Ã¡p dá»¥ng mÃ¡y mÃ³c.
-- Risk signals giÃºp há»‡ thá»‘ng quyáº¿t Ä‘á»‹nh khi nÃ o cáº§n yÃªu cáº§u xÃ¡c thá»±c thÃªm.
-- XÃ¡c thá»±c nÃªn tiáº¿p tá»¥c sau Ä‘Äƒng nháº­p Ä‘á»‘i vá»›i cÃ¡c hÃ nh Ä‘á»™ng nháº¡y cáº£m.
-- Amazon Cognito cÃ³ thá»ƒ cung cáº¥p ná»n táº£ng Ä‘á»‹nh danh.
-- Authsignal cÃ³ thá»ƒ cung cáº¥p rule thÃ­ch á»©ng vÃ  Ä‘iá»u phá»‘i xÃ¡c thá»±c.
-- CÃ¡c phÆ°Æ¡ng thá»©c xÃ¡c thá»±c khÃ¡c nhau nÃªn Ä‘Æ°á»£c chá»n theo rá»§i ro vÃ  nhu cáº§u ngÆ°á»i dÃ¹ng.
-- Má»™t há»‡ thá»‘ng xÃ¡c thá»±c tá»‘t cáº§n cÃ¢n báº±ng báº£o máº­t, tráº£i nghiá»‡m, chi phÃ­ vÃ  tÃ­nh linh hoáº¡t.
+- Bảo mật mạnh không phải lúc nào cũng đồng nghĩa với nhiều rào cản.
+- MFA nên được áp dụng thông minh, không nên áp dụng máy móc.
+- Risk signals giúp hệ thống quyết định khi nào cần yêu cầu xác thực thêm.
+- Xác thực nên tiếp tục sau đăng nhập đối với các hành động nhạy cảm.
+- Amazon Cognito có thể cung cấp nền tảng định danh.
+- Authsignal có thể cung cấp rule thích ứng và điều phối xác thực.
+- Các phương thức xác thực khác nhau nên được chọn theo rủi ro và nhu cầu người dùng.
+- Một hệ thống xác thực tốt cần cân bằng bảo mật, trải nghiệm, chi phí và tính linh hoạt.
 
-## 11. á»¨ng dá»¥ng thá»±c táº¿
+## 11. Ứng dụng thực tế
 
-Nhá»¯ng Ã½ tÆ°á»Ÿng trong bÃ i viáº¿t cÃ³ thá»ƒ Ä‘Æ°á»£c Ã¡p dá»¥ng cho nhiá»u á»©ng dá»¥ng yÃªu cáº§u cáº£ báº£o máº­t máº¡nh vÃ  tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng mÆ°á»£t mÃ . VÃ­ dá»¥ gá»“m á»©ng dá»¥ng y táº¿, ngÃ¢n hÃ ng, thÆ°Æ¡ng máº¡i Ä‘iá»‡n tá»­, ná»n táº£ng SaaS quáº£n trá»‹ vÃ  á»©ng dá»¥ng doanh nghiá»‡p.
+Những ý tưởng trong bài viết có thể được áp dụng cho nhiều ứng dụng yêu cầu cả bảo mật mạnh và trải nghiệm người dùng mượt mà. Ví dụ gồm ứng dụng y tế, ngân hàng, thương mại điện tử, nền tảng SaaS quản trị và ứng dụng doanh nghiệp.
 
-Äá»‘i vá»›i hÃ nh Ä‘á»™ng rá»§i ro tháº¥p, á»©ng dá»¥ng cÃ³ thá»ƒ cho phÃ©p ngÆ°á»i dÃ¹ng tiáº¿p tá»¥c mÃ  khÃ´ng cáº§n xÃ¡c minh thÃªm. Äá»‘i vá»›i hÃ nh Ä‘á»™ng rá»§i ro cao, á»©ng dá»¥ng cÃ³ thá»ƒ yÃªu cáº§u xÃ¡c thá»±c máº¡nh hÆ¡n. Äiá»u nÃ y táº¡o ra tráº£i nghiá»‡m cÃ¢n báº±ng hÆ¡n.
+Đối với hành động rủi ro thấp, ứng dụng có thể cho phép người dùng tiếp tục mà không cần xác minh thêm. Đối với hành động rủi ro cao, ứng dụng có thể yêu cầu xác thực mạnh hơn. Điều này tạo ra trải nghiệm cân bằng hơn.
 
-Thay vÃ¬ xem má»i ngÆ°á»i dÃ¹ng vÃ  má»i thao tÃ¡c lÃ  giá»‘ng nhau, xÃ¡c thá»±c thÃ­ch á»©ng cho phÃ©p há»‡ thá»‘ng Ä‘Æ°a ra quyáº¿t Ä‘á»‹nh thÃ´ng minh hÆ¡n. Äiá»u nÃ y giÃºp doanh nghiá»‡p giáº£m ma sÃ¡t nhÆ°ng váº«n báº£o vá»‡ cÃ¡c hÃ nh Ä‘á»™ng vÃ  dá»¯ liá»‡u nháº¡y cáº£m.
+Thay vì xem mọi người dùng và mọi thao tác là giống nhau, xác thực thích ứng cho phép hệ thống đưa ra quyết định thông minh hơn. Điều này giúp doanh nghiệp giảm ma sát nhưng vẫn bảo vệ các hành động và dữ liệu nhạy cảm.
 
-XÃ¡c thá»±c liÃªn tá»¥c cÅ©ng ráº¥t quan trá»ng vÃ¬ báº£o máº­t khÃ´ng nÃªn dá»«ng láº¡i sau khi Ä‘Äƒng nháº­p. Má»™t phiÃªn lÃ m viá»‡c cÃ³ thá»ƒ trá»Ÿ nÃªn rá»§i ro vá» sau, Ä‘áº·c biá»‡t khi ngÆ°á»i dÃ¹ng thá»±c hiá»‡n cÃ¡c hÃ nh Ä‘á»™ng nháº¡y cáº£m. Step-up authentication giÃºp báº£o vá»‡ nhá»¯ng thá»i Ä‘iá»ƒm quan trá»ng nÃ y.
+Xác thực liên tục cũng rất quan trọng vì bảo mật không nên dừng lại sau khi đăng nhập. Một phiên làm việc có thể trở nên rủi ro về sau, đặc biệt khi người dùng thực hiện các hành động nhạy cảm. Step-up authentication giúp bảo vệ những thời điểm quan trọng này.
 
-## 12. Káº¿t luáº­n
+## 12. Kết luận
 
-BÃ i viáº¿t nÃ y há»¯u Ã­ch vÃ¬ cho tháº¥y thiáº¿t káº¿ xÃ¡c thá»±c khÃ´ng chá»‰ lÃ  thÃªm nhiá»u lá»›p báº£o máº­t. Äiá»u quan trá»ng lÃ  Ã¡p dá»¥ng Ä‘Ãºng lá»›p báº£o máº­t vÃ o Ä‘Ãºng thá»i Ä‘iá»ƒm.
+Bài viết này hữu ích vì cho thấy thiết kế xác thực không chỉ là thêm nhiều lớp bảo mật. Điều quan trọng là áp dụng đúng lớp bảo mật vào đúng thời điểm.
 
-Má»™t há»‡ thá»‘ng xÃ¡c thá»±c tá»‘t cáº§n báº£o vá»‡ tÃ i khoáº£n nhÆ°ng khÃ´ng lÃ m má»i tÆ°Æ¡ng tÃ¡c trá»Ÿ nÃªn khÃ³ khÄƒn. Amazon Cognito vÃ  Authsignal cÃ³ thá»ƒ phá»‘i há»£p Ä‘á»ƒ há»— trá»£ má»¥c tiÃªu nÃ y báº±ng cÃ¡ch káº¿t há»£p quáº£n lÃ½ Ä‘á»‹nh danh, Ä‘Ã¡nh giÃ¡ rá»§i ro, ra quyáº¿t Ä‘á»‹nh dá»±a trÃªn rule vÃ  cÃ¡c phÆ°Æ¡ng thá»©c xÃ¡c thá»±c linh hoáº¡t.
+Một hệ thống xác thực tốt cần bảo vệ tài khoản nhưng không làm mọi tương tác trở nên khó khăn. Amazon Cognito và Authsignal có thể phối hợp để hỗ trợ mục tiêu này bằng cách kết hợp quản lý định danh, đánh giá rủi ro, ra quyết định dựa trên rule và các phương thức xác thực linh hoạt.
 
-NhÃ¬n chung, bÃ i viáº¿t Ä‘Æ°a ra má»™t hÆ°á»›ng thiáº¿t káº¿ thá»±c táº¿ Ä‘á»ƒ xÃ¢y dá»±ng tráº£i nghiá»‡m xÃ¡c thá»±c tá»‘t hÆ¡n. NÃ³ cho tháº¥y tráº£i nghiá»‡m báº£o máº­t tá»‘t nháº¥t khÃ´ng pháº£i lÃºc nÃ o cÅ©ng lÃ  tráº£i nghiá»‡m nghiÃªm ngáº·t nháº¥t, mÃ  lÃ  tráº£i nghiá»‡m cÃ³ kháº£ nÄƒng thÃ­ch á»©ng vá»›i rá»§i ro, hÃ nh vi ngÆ°á»i dÃ¹ng vÃ  nhu cáº§u kinh doanh.
+Nhìn chung, bài viết đưa ra một hướng thiết kế thực tế để xây dựng trải nghiệm xác thực tốt hơn. Nó cho thấy trải nghiệm bảo mật tốt nhất không phải lúc nào cũng là trải nghiệm nghiêm ngặt nhất, mà là trải nghiệm có khả năng thích ứng với rủi ro, hành vi người dùng và nhu cầu kinh doanh.
 
-## Link bÃ i viáº¿t gá»‘c
+## Link bài viết gốc
 
 AWS Partner Network Blog:  
 **Creating great authentication experiences with Amazon Cognito and Authsignal**
 
 https://aws.amazon.com/blogs/apn/creating-great-authentication-experiences-with-amazon-cognito-and-authsignal/
 
-## CÃ¢u há»i tháº£o luáº­n
+## Câu hỏi thảo luận
 
-Báº¡n Ä‘Ã£ tá»«ng thiáº¿t káº¿ há»‡ thá»‘ng xÃ¡c thá»±c cÃ¢n báº±ng giá»¯a báº£o máº­t vÃ  tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng chÆ°a? Theo báº¡n, pháº§n thÃ¡ch thá»©c nháº¥t lÃ  giáº£m rÃ o cáº£n Ä‘Äƒng nháº­p cho ngÆ°á»i dÃ¹ng bÃ¬nh thÆ°á»ng hay tÄƒng cÆ°á»ng báº£o vá»‡ cho cÃ¡c hÃ nh Ä‘á»™ng rá»§i ro cao?
+Bạn đã từng thiết kế hệ thống xác thực cân bằng giữa bảo mật và trải nghiệm người dùng chưa? Theo bạn, phần thách thức nhất là giảm rào cản đăng nhập cho người dùng bình thường hay tăng cường bảo vệ cho các hành động rủi ro cao?

@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Validate AMB ledger transaction"
 date : 2024-01-01
 weight : 2
@@ -31,4 +31,3 @@ awscurl `
 #### Validation
 
 The result should show a block number or a transaction hash.
-

@@ -1,5 +1,5 @@
-﻿---
-title : "Tá»•ng quan workshop"
+---
+title : "Tổng quan workshop"
 date : 2026-07-05
 weight : 1
 chapter : false
@@ -7,32 +7,31 @@ pre : " <b> 5.1. </b> "
 ---
 
 
-#### TÃ¬nh huá»‘ng lab
+#### Tình huống lab
 
-Trong workshop nÃ y, báº¡n sáº½ triá»ƒn khai MedChain AI, má»™t á»©ng dá»¥ng quáº£n lÃ½ bá»‡nh viá»‡n sá»­ dá»¥ng AWS managed services cho frontend hosting, backend API, xÃ¡c thá»±c, database, thanh toÃ¡n, blockchain validation vÃ  monitoring.
+Trong workshop này, bạn sẽ triển khai MedChain AI, một ứng dụng quản lý bệnh viện sử dụng AWS managed services cho frontend hosting, backend API, xác thực, database, thanh toán, blockchain validation và monitoring.
 
-Sau khi hoÃ n thÃ nh lab, á»©ng dá»¥ng cáº§n cÃ³:
+Sau khi hoàn thành lab, ứng dụng cần có:
 
-+ Web frontend host trÃªn Amazon S3 vÃ  phÃ¢n phá»‘i báº±ng CloudFront.
-+ Backend API má»Ÿ báº±ng API Gateway vÃ  xá»­ lÃ½ báº±ng Lambda.
-+ ÄÄƒng nháº­p vÃ  phÃ¢n quyá»n báº±ng Cognito.
-+ Dá»¯ liá»‡u bá»‡nh viá»‡n lÆ°u trong DynamoDB vÃ  tÃ i liá»‡u lÆ°u trong S3.
-+ Luá»“ng thanh toÃ¡n hÃ³a Ä‘Æ¡n báº±ng VNPay Sandbox.
-+ TÃ­ch há»£p AMB Ethereum node Ä‘á»ƒ lÆ°u metadata toÃ n váº¹n há»“ sÆ¡ bá»‡nh Ã¡n.
-+ CloudWatch logs, metrics vÃ  alarms.
++ Web frontend host trên Amazon S3 và phân phối bằng CloudFront.
++ Backend API mở bằng API Gateway và xử lý bằng Lambda.
++ Đăng nhập và phân quyền bằng Cognito.
++ Dữ liệu bệnh viện lưu trong DynamoDB và tài liệu lưu trong S3.
++ Luồng thanh toán hóa đơn bằng VNPay Sandbox.
++ Tích hợp AMB Ethereum node để lưu metadata toàn vẹn hồ sơ bệnh án.
++ CloudWatch logs, metrics và alarms.
 
-![Tá»•ng quan MedChain AI](/TranKhanhTam_AWS_Template/images/5-Workshop/5.1-Workshop-overview/mechain_ai.png)
+![Tổng quan MedChain AI](/images/5-Workshop/5.1-Workshop-overview/mechain_ai.png)
 
-#### CÃ¡ch viáº¿t lab
+#### Cách viết lab
 
-Má»—i bÆ°á»›c triá»ƒn khai Ä‘Æ°á»£c viáº¿t theo hai cÃ¡ch:
+Mỗi bước triển khai được viết theo hai cách:
 
-+ **CÃ¡ch A - AWS Console** dÃ nh cho ngÆ°á»i muá»‘n thao tÃ¡c trÃªn giao diá»‡n AWS vÃ  chá»¥p mÃ n hÃ¬nh.
-+ **CÃ¡ch B - Lá»‡nh / code deployment** dÃ nh cho ngÆ°á»i muá»‘n triá»ƒn khai láº·p láº¡i báº±ng AWS CLI, CDK vÃ  PowerShell.
++ **Cách A - AWS Console** dành cho người muốn thao tác trên giao diện AWS và chụp màn hình.
++ **Cách B - Lệnh / code deployment** dành cho người muốn triển khai lặp lại bằng AWS CLI, CDK và PowerShell.
 
-Sá»­ dá»¥ng stack name riÃªng cho lab:
+Sử dụng stack name riêng cho lab:
 
 ```
 MedChainAiLabStack
 ```
-

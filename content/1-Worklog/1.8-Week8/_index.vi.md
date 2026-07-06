@@ -1,5 +1,5 @@
-﻿---
-title: "Worklog Tuáº§n 8"
+---
+title: "Worklog Tuần 8"
 date: 2026-06-08
 weight: 1
 chapter: false
@@ -8,28 +8,28 @@ pre: " <b> 1.8. </b> "
 
 
 
-### Má»¥c tiÃªu tuáº§n 8:
+### Mục tiêu tuần 8:
 
-* Thá»±c hiá»‡n xÃ¢y dá»±ng vÃ  váº½ sÆ¡ Ä‘á»“ kiáº¿n trÃºc há»‡ thá»‘ng tá»•ng thá»ƒ trÃªn ná»n táº£ng AWS cho dá»± Ã¡n.
+* Thực hiện xây dựng và vẽ sơ đồ kiến trúc hệ thống tổng thể trên nền tảng AWS cho dự án.
 
-* Triá»ƒn khai xÃ¢y dá»±ng, tá»‘i Æ°u hÃ³a giao diá»‡n á»©ng dá»¥ng (Website & App) vÃ  chuáº©n hÃ³a cáº¥u trÃºc cÆ¡ sá»Ÿ dá»¯ liá»‡u.
+* Triển khai xây dựng, tối ưu hóa giao diện ứng dụng (Website & App) và chuẩn hóa cấu trúc cơ sở dữ liệu.
 
-### CÃ¡c cÃ´ng viá»‡c cáº§n triá»ƒn khai trong tuáº§n nÃ y:
-| Thá»© | CÃ´ng viá»‡c                                                                                                                                                                                   | NgÃ y báº¯t Ä‘áº§u | NgÃ y hoÃ n thÃ nh | Nguá»“n tÃ i liá»‡u                            |
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Thiáº¿t káº¿ kiáº¿n trÃºc há»‡ thá»‘ng: Tiáº¿n hÃ nh phÃ¢n tÃ­ch, phÃ¡c tháº£o vÃ  váº½ mÃ´ hÃ¬nh sÆ¡ Ä‘á»“ kiáº¿n trÃºc tá»•ng thá»ƒ cho toÃ n bá»™ dá»± Ã¡n dá»±a trÃªn cÃ¡c tiÃªu chuáº©n thiáº¿t káº¿ tá»‘i Æ°u cá»§a AWS (AWS Well-Architected).                                                                | 08/06/2026 |	08/06/2026      | <https://cloudjourney.awsstudygroup.com/>|
-| 3   | - Thiáº¿t káº¿ kiáº¿n trÃºc há»‡ thá»‘ng: Tiáº¿n hÃ nh phÃ¢n tÃ­ch, phÃ¡c tháº£o vÃ  váº½ mÃ´ hÃ¬nh sÆ¡ Ä‘á»“ kiáº¿n trÃºc tá»•ng thá»ƒ cho toÃ n bá»™ dá»± Ã¡n dá»±a trÃªn cÃ¡c tiÃªu chuáº©n thiáº¿t káº¿ tá»‘i Æ°u cá»§a AWS (AWS Well-Architected).               | 09/06/2026	| 09/06/2026    | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - PhÃ¡t triá»ƒn giao diá»‡n á»©ng dá»¥ng: Báº¯t tay vÃ o xÃ¢y dá»±ng, láº­p trÃ¬nh giao diá»‡n ngÆ°á»i dÃ¹ng frontend cho cáº£ phiÃªn báº£n há»‡ thá»‘ng website vÃ  á»©ng dá»¥ng di Ä‘á»™ng (app) cá»§a dá»± Ã¡n. | 10/06/2026	| 10/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Kiá»ƒm thá»­ giao diá»‡n: Thá»±c hiá»‡n quy trÃ¬nh cháº¡y thá»­ nghiá»‡m, kiá»ƒm tra Ä‘á»™ tÆ°Æ¡ng thÃ­ch, phÃ¡t hiá»‡n cÃ¡c lá»—i hiá»ƒn thá»‹ (UI) cÅ©ng nhÆ° luá»“ng tÆ°Æ¡ng tÃ¡c xá»­ lÃ½ logic (UX) trÃªn giao diá»‡n á»©ng dá»¥ng vÃ  tiáº¿n hÃ nh sá»­a lá»—i (Debug).                 | 11/06/2026	| 11/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Chuáº©n hÃ³a cÆ¡ sá»Ÿ dá»¯ liá»‡u: RÃ  soÃ¡t láº¡i mÃ´ hÃ¬nh ERD, thá»±c hiá»‡n cÃ¡c Ä‘iá»u chá»‰nh vÃ  tá»‘i Æ°u hÃ³a cáº¥u trÃºc báº£ng dá»¯ liá»‡u cá»§a dá»± Ã¡n sao cho khá»›p vá»›i giao diá»‡n thá»±c táº¿                                                         | 12/06/2026	| 12/06/2026    | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Thiết kế kiến trúc hệ thống: Tiến hành phân tích, phác thảo và vẽ mô hình sơ đồ kiến trúc tổng thể cho toàn bộ dự án dựa trên các tiêu chuẩn thiết kế tối ưu của AWS (AWS Well-Architected).                                                                | 08/06/2026 |	08/06/2026      | <https://cloudjourney.awsstudygroup.com/>|
+| 3   | - Thiết kế kiến trúc hệ thống: Tiến hành phân tích, phác thảo và vẽ mô hình sơ đồ kiến trúc tổng thể cho toàn bộ dự án dựa trên các tiêu chuẩn thiết kế tối ưu của AWS (AWS Well-Architected).               | 09/06/2026	| 09/06/2026    | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Phát triển giao diện ứng dụng: Bắt tay vào xây dựng, lập trình giao diện người dùng frontend cho cả phiên bản hệ thống website và ứng dụng di động (app) của dự án. | 10/06/2026	| 10/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Kiểm thử giao diện: Thực hiện quy trình chạy thử nghiệm, kiểm tra độ tương thích, phát hiện các lỗi hiển thị (UI) cũng như luồng tương tác xử lý logic (UX) trên giao diện ứng dụng và tiến hành sửa lỗi (Debug).                 | 11/06/2026	| 11/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Chuẩn hóa cơ sở dữ liệu: Rà soát lại mô hình ERD, thực hiện các điều chỉnh và tối ưu hóa cấu trúc bảng dữ liệu của dự án sao cho khớp với giao diện thực tế                                                         | 12/06/2026	| 12/06/2026    | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c tuáº§n 8:
+### Kết quả đạt được tuần 8:
 
-* HoÃ n thÃ nh báº£n váº½ sÆ¡ Ä‘á»“ mÃ´ hÃ¬nh kiáº¿n trÃºc Ä‘Ã¡m mÃ¢y tá»•ng thá»ƒ cho dá»± Ã¡n, Ä‘á»‹nh hÃ¬nh rÃµ rÃ ng luá»“ng tÆ°Æ¡ng tÃ¡c giá»¯a cÃ¡c táº§ng dá»‹ch vá»¥.
+* Hoàn thành bản vẽ sơ đồ mô hình kiến trúc đám mây tổng thể cho dự án, định hình rõ ràng luồng tương tác giữa các tầng dịch vụ.
 
-* XÃ¢y dá»±ng xong bá»™ khung giao diá»‡n cÆ¡ báº£n (Website vÃ  Mobile App), Ä‘áº£m báº£o cÃ¡c tÃ­nh nÄƒng chÃ­nh hiá»ƒn thá»‹ Ä‘Ãºng theo Ä‘áº·c táº£ yÃªu cáº§u.
+* Xây dựng xong bộ khung giao diện cơ bản (Website và Mobile App), đảm bảo các tính năng chính hiển thị đúng theo đặc tả yêu cầu.
 
-* HoÃ n thiá»‡n cÃ´ng tÃ¡c kiá»ƒm thá»­ giao diá»‡n, debug loáº¡i bá» cÃ¡c lá»—i tÆ°Æ¡ng tÃ¡c giao diá»‡n vÃ  tá»‘i Æ°u hÃ³a luá»“ng tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng.
+* Hoàn thiện công tác kiểm thử giao diện, debug loại bỏ các lỗi tương tác giao diện và tối ưu hóa luồng trải nghiệm người dùng.
 
-* Thá»±c hiá»‡n Ä‘iá»u chá»‰nh vÃ  tinh chá»‰nh cáº¥u trÃºc cÃ¡c báº£ng cÆ¡ sá»Ÿ dá»¯ liá»‡u phÃ¹ há»£p, Ä‘áº£m báº£o tÃ­nh nháº¥t quÃ¡n dá»¯ liá»‡u cho cÃ¡c luá»“ng xá»­ lÃ½ trÃªn á»©ng dá»¥ng thá»±c táº¿.
+* Thực hiện điều chỉnh và tinh chỉnh cấu trúc các bảng cơ sở dữ liệu phù hợp, đảm bảo tính nhất quán dữ liệu cho các luồng xử lý trên ứng dụng thực tế.

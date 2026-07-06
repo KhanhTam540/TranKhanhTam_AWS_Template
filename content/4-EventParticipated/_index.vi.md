@@ -1,5 +1,5 @@
-﻿---
-title: "CÃ¡c events Ä‘Ã£ tham gia"
+---
+title: "Các events đã tham gia"
 date: 2024-01-01
 weight: 4
 chapter: false
@@ -7,26 +7,25 @@ pre: " <b> 4. </b> "
 ---
 
 
-Trong quÃ¡ trÃ¬nh thá»±c táº­p, em Ä‘Ã£ tham gia 2 events, vá»›i má»—i event lÃ  má»™t tráº£i nghiá»‡m Ä‘Ã¡ng nhá»› vá»›i nhá»¯ng kiáº¿n thá»©c má»›i, hay vÃ  bá»• Ã­ch, cÃ¹ng vá»›i Ä‘Ã³ lÃ  nhá»©ng mÃ³n quÃ  vÃ  nhá»¯ng khoáº£nh kháº¯c ráº¥t tuyá»‡t vá»i.
+Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
 ### [Event 1](4.1-Event1/)
-&emsp;**TÃªn sá»± kiá»‡n:** FCAJ Community Day
+&emsp;**Tên sự kiện:** FCAJ Community Day
 
-&emsp;**Thá»i gian:** 09:00 ngÃ y 23/05/2026
+&emsp;**Thời gian:** 09:00 ngày 23/05/2026
 
-&emsp;**Äá»‹a Ä‘iá»ƒm:** Táº§ng 26, tÃ²a nhÃ  Bitexco, sá»‘ 02 Ä‘Æ°á»ng Háº£i Triá»u, phÆ°á»ng SÃ i GÃ²n, thÃ nh phá»‘ Há»“ ChÃ­ Minh
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
-&emsp;**Vai trÃ² trong sá»± kiá»‡n:** NgÆ°á»i tham dá»± 
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
 
 
 
 ### [Event 2](4.2-Event2/)
-&emsp;**TÃªn sá»± kiá»‡n:** FCAJ Community Day
+&emsp;**Tên sự kiện:** FCAJ Community Day
 
-&emsp;**Thá»i gian:** 09:00 ngÃ y 26/06/2026
+&emsp;**Thời gian:** 09:00 ngày 26/06/2026
 
-&emsp;**Äá»‹a Ä‘iá»ƒm:** Táº§ng 26, tÃ²a nhÃ  Bitexco, sá»‘ 02 Ä‘Æ°á»ng Háº£i Triá»u, phÆ°á»ng SÃ i GÃ²n, thÃ nh phá»‘ Há»“ ChÃ­ Minh
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
-&emsp;**Vai trÃ² trong sá»± kiá»‡n:** NgÆ°á»i tham dá»± 
-
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
 

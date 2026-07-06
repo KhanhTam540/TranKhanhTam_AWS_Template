@@ -1,37 +1,37 @@
-﻿---
-title : "Táº¡o CloudFront distribution cho frontend"
+---
+title : "Tạo CloudFront distribution cho frontend"
 date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.6.3. </b> "
 ---
 
-#### Má»¥c tiÃªu
+#### Mục tiêu
 
-Táº¡o hoáº·c kiá»ƒm tra CloudFront distribution dÃ¹ng Ä‘á»ƒ phá»¥c vá»¥ frontend vÃ  chuyá»ƒn tiáº¿p request backend API. CloudFront distribution domain lÃ  URL public cá»§a á»©ng dá»¥ng.
+Tạo hoặc kiểm tra CloudFront distribution dùng để phục vụ frontend và chuyển tiếp request backend API. CloudFront distribution domain là URL public của ứng dụng.
 
-#### CÃ¡ch A - AWS Console
+#### Cách A - AWS Console
 
-1. Má»Ÿ **CloudFront** vÃ  kiá»ƒm tra distribution.
-2. Kiá»ƒm tra default behavior trá» Ä‘áº¿n S3 frontend origin.
-3. Kiá»ƒm tra behavior `/api/*` trá» Ä‘áº¿n API Gateway.
-4. Copy CloudFront distribution domain, vÃ­ dá»¥ `dxxxxx.cloudfront.net`.
+1. Mở **CloudFront** và kiểm tra distribution.
+2. Kiểm tra default behavior trỏ đến S3 frontend origin.
+3. Kiểm tra behavior `/api/*` trỏ đến API Gateway.
+4. Copy CloudFront distribution domain, ví dụ `dxxxxx.cloudfront.net`.
 
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-1.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-2.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-3.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-4.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-1.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-2.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-3.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-4.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-5.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-1.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-2.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-3.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-4.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-1.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-2.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-3.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-4.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-cloudfront-5.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
 
 
-#### CÃ¡ch B - Lá»‡nh / code deployment
+#### Cách B - Lệnh / code deployment
 
 ```powershell
 $DistributionDomain = aws cloudformation describe-stacks `
@@ -44,8 +44,8 @@ $DistributionDomain = aws cloudformation describe-stacks `
 $DistributionDomain
 ```
 
-#### Kiá»ƒm tra
+#### Kiểm tra
 
-CloudFront distribution pháº£i cÃ³ behavior cho frontend vÃ  behavior `/api/*` cho API. Website URL sáº½ lÃ  `https://<cloudfront-domain>`.
+CloudFront distribution phải có behavior cho frontend và behavior `/api/*` cho API. Website URL sẽ là `https://<cloudfront-domain>`.
 
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront_code.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront_code.png)

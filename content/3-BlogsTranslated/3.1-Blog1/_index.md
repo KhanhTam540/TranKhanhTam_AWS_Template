@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Blog 1"
 date: 2026-07-05
 weight: 1
@@ -13,7 +13,7 @@ In modern SaaS applications, data protection is one of the most important archit
 
 To achieve this, encryption is commonly used as a security layer. AWS Key Management Service, also known as AWS KMS, helps organizations create, manage, and control encryption keys for their cloud workloads. However, designing encryption for a multi-tenant system is not only a security problem. It is also a cost, scalability, and operational management problem.
 
-The AWS blog article **â€œSimplify multi-tenant encryption with a cost-conscious AWS KMS key strategyâ€** explains how to design a more efficient encryption model for multi-tenant SaaS applications. Instead of assigning one dedicated KMS Customer Managed Key to every tenant, the article introduces a more balanced approach that combines tenant tiering, shared keys, Encryption Context, dynamic access policies, audit logging, and cost-aware storage design.
+The AWS blog article **“Simplify multi-tenant encryption with a cost-conscious AWS KMS key strategy”** explains how to design a more efficient encryption model for multi-tenant SaaS applications. Instead of assigning one dedicated KMS Customer Managed Key to every tenant, the article introduces a more balanced approach that combines tenant tiering, shared keys, Encryption Context, dynamic access policies, audit logging, and cost-aware storage design.
 
 ## 1. The challenge of multi-tenant encryption
 
@@ -44,12 +44,12 @@ This tiered strategy helps SaaS providers avoid unnecessary cost while still off
 A simplified model can be described as follows:
 
 ```text
-Enterprise Tier  â†’ Dedicated KMS key for each tenant
-Standard Tier    â†’ Shared KMS key with tenant-specific context
-Free Tier        â†’ Shared KMS key with controlled access policies
+Enterprise Tier  → Dedicated KMS key for each tenant
+Standard Tier    → Shared KMS key with tenant-specific context
+Free Tier        → Shared KMS key with controlled access policies
 ```
 
-This approach gives the system more flexibility. Instead of choosing between â€œone key for everyoneâ€ and â€œone key for every tenant,â€ the architecture can use different key strategies for different customer groups.
+This approach gives the system more flexibility. Instead of choosing between “one key for everyone” and “one key for every tenant,” the architecture can use different key strategies for different customer groups.
 
 ## 3. Using Encryption Context for tenant isolation
 
@@ -136,7 +136,7 @@ This is useful because a system may need high performance but not a large amount
 
 The key idea is that encryption strategy should not be designed separately from infrastructure cost. Storage, key management, audit logs, and access control should all be considered together when designing a secure and cost-effective SaaS architecture.
 
-![Blog 1](/TranKhanhTam_AWS_Template/images/3-Blog/Blog-1.png)
+![Blog 1](/images/3-Blog/Blog-1.png)
 
 ## 7. Main lessons from the article
 

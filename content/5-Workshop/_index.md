@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Workshop"
 date : 2024-01-01
 weight : 5
@@ -33,4 +33,3 @@ The order in this workshop follows the real dependency order. You will prepare t
 7. [Initialize and run the application](5.7-Initialize-Run/)
 8. [Configure integrations and test](5.8-Integration-Test/)
 9. [Monitoring, security, cost, and cleanup](5.9-Monitoring-Cleanup/)
-

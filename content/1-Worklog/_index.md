@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Worklog"
 date: 2026-04-17
 weight: 1
@@ -34,4 +34,3 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 **Week 11:** [Standardize CCCD as the medical record ID, synchronize medical data, build the Medical Integrity Ledger, and design AMB and real VNPay/MoMo payment flows.](1.11-week11/)
 
 **Week 12:** [Perform final deployment testing, reset the dataset, backfill the ledger, verify blockchain integrity, review AMB transactionHash, payment callbacks, and complete the report.](1.12-week12/)
-

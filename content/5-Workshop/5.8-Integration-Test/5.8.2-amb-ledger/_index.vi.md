@@ -1,23 +1,23 @@
-﻿---
-title : "Kiá»ƒm tra AMB ledger transaction"
+---
+title : "Kiểm tra AMB ledger transaction"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.8.2. </b> "
 ---
 
-#### Má»¥c tiÃªu
+#### Mục tiêu
 
-Kiá»ƒm tra AMB node pháº£n há»“i Ä‘Æ°á»£c vÃ  á»©ng dá»¥ng lÆ°u Ä‘Æ°á»£c ledger metadata.
+Kiểm tra AMB node phản hồi được và ứng dụng lưu được ledger metadata.
 
-#### CÃ¡ch A - AWS Console
+#### Cách A - AWS Console
 
-1. Má»Ÿ giao diá»‡n MedChain AI.
-2. HoÃ n thÃ nh thao tÃ¡c há»“ sÆ¡ bá»‡nh Ã¡n cÃ³ ghi ledger metadata.
-3. Má»Ÿ CloudWatch logs cá»§a ledger Lambda.
-4. Kiá»ƒm tra `payloadHash` vÃ  `transactionHash`.
+1. Mở giao diện MedChain AI.
+2. Hoàn thành thao tác hồ sơ bệnh án có ghi ledger metadata.
+3. Mở CloudWatch logs của ledger Lambda.
+4. Kiểm tra `payloadHash` và `transactionHash`.
 
-#### CÃ¡ch B - Lá»‡nh / code deployment
+#### Cách B - Lệnh / code deployment
 
 ```powershell
 awscurl `
@@ -28,7 +28,6 @@ awscurl `
   "$env:AMB_ETHEREUM_ENDPOINT"
 ```
 
-#### Kiá»ƒm tra
+#### Kiểm tra
 
-Káº¿t quáº£ cáº§n hiá»ƒn thá»‹ block number hoáº·c transaction hash.
-
+Kết quả cần hiển thị block number hoặc transaction hash.

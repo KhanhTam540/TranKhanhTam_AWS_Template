@@ -1,4 +1,4 @@
-﻿---
+---
 title : "Architecture and dependency order"
 date : 2024-01-01
 weight : 3
@@ -24,9 +24,9 @@ The MedChain AI lab uses the following AWS services:
 
 Users access the system through the CloudFront distribution domain.
 
-![SÆ¡ Ä‘á»“ kiáº¿n trÃºc](/TranKhanhTam_AWS_Template/images/5-Workshop/5.3-Architecture/architecture-0.png)
+![Sơ đồ kiến trúc](/images/5-Workshop/5.3-Architecture/architecture-0.png)
 
-![SÆ¡ Ä‘á»“ kiáº¿n trÃºc](/TranKhanhTam_AWS_Template/images/5-Workshop/5.3-Architecture/architecture-1.png)
+![Sơ đồ kiến trúc](/images/5-Workshop/5.3-Architecture/architecture-1.png)
 
 #### Dependency order
 
@@ -45,5 +45,4 @@ The correct order is important because some resources depend on outputs from pre
 11. VNPay IPN and Return URL using CloudFront domain.
 12. End-to-end testing and monitoring.
 13. Cleanup in reverse order.
-
 

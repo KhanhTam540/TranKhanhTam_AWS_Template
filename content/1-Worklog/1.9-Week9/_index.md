@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Week 9 Worklog"
 date: 2026-06-15
 weight: 1
@@ -36,4 +36,3 @@ pre: " <b> 1.9. </b> "
 * Planned role-based access control and the main data model direction.
 
 * Defined the initial direction for AMB blockchain and real payment integration.
-

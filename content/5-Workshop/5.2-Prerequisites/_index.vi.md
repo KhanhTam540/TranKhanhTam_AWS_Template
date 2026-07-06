@@ -1,26 +1,26 @@
-﻿---
-title : "Äiá»u kiá»‡n chuáº©n bá»‹"
+---
+title : "Điều kiện chuẩn bị"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### Äiá»u kiá»‡n chuáº©n bá»‹
+#### Điều kiện chuẩn bị
 
-TrÆ°á»›c khi báº¯t Ä‘áº§u bÃ i lab, cáº§n chuáº©n bá»‹:
+Trước khi bắt đầu bài lab, cần chuẩn bị:
 
-+ AWS account cÃ³ quyá»n billing.
-+ AWS CLI Ä‘Ã£ cáº¥u hÃ¬nh trÃªn mÃ¡y local.
-+ Node.js vÃ  npm.
++ AWS account có quyền billing.
++ AWS CLI đã cấu hình trên máy local.
++ Node.js và npm.
 + AWS CDK CLI.
-+ Git vÃ  PowerShell.
-+ ThÃ´ng tin merchant VNPay Sandbox.
-+ Quyá»n táº¡o Amazon Managed Blockchain Ethereum node.
++ Git và PowerShell.
++ Thông tin merchant VNPay Sandbox.
++ Quyền tạo Amazon Managed Blockchain Ethereum node.
 
-Website vÃ  callback backend sáº½ dÃ¹ng CloudFront distribution domain.
+Website và callback backend sẽ dùng CloudFront distribution domain.
 
-#### Kiá»ƒm tra cÃ´ng cá»¥ local
+#### Kiểm tra công cụ local
 
 ```powershell
 node --version
@@ -29,15 +29,15 @@ aws --version
 git --version
 ```
 
-![CÃ´ng cá»¥ local](/TranKhanhTam_AWS_Template/images/5-Workshop/5.2-Prerequisites/local.png)
+![Công cụ local](/images/5-Workshop/5.2-Prerequisites/local.png)
 
-#### Ghi chÃº quyá»n IAM
+#### Ghi chú quyền IAM
 
-Gáº¯n deploy policy vÃ o IAM user hoáº·c role dÃ¹ng Ä‘á»ƒ cháº¡y lab. Vá»›i bÃ i lab sinh viÃªn, deployer cáº§n quyá»n cho CloudFormation, S3, DynamoDB, Lambda, API Gateway, Cognito, CloudFront, Secrets Manager, CloudWatch, Managed Blockchain vÃ  IAM PassRole.
+Gắn deploy policy vào IAM user hoặc role dùng để chạy lab. Với bài lab sinh viên, deployer cần quyền cho CloudFormation, S3, DynamoDB, Lambda, API Gateway, Cognito, CloudFront, Secrets Manager, CloudWatch, Managed Blockchain và IAM PassRole.
 
-#### Táº¡o workspace lab má»›i
+#### Tạo workspace lab mới
 
-KhÃ´ng cháº¡y pháº§n command deployment trá»±c tiáº¿p trong project chÃ­nh. HÃ£y táº¡o thÆ° má»¥c riÃªng Ä‘á»ƒ cháº¡y lá»‡nh, chá»¥p hÃ¬nh vÃ  lÆ°u báº±ng chá»©ng.
+Không chạy phần command deployment trực tiếp trong project chính. Hãy tạo thư mục riêng để chạy lệnh, chụp hình và lưu bằng chứng.
 
 ```powershell
 $LabRoot = "D:\AWS\LabRuns\MedChainAI-CommandRun"
@@ -45,7 +45,6 @@ New-Item -ItemType Directory -Path $LabRoot -Force | Out-Null
 cd $LabRoot
 ```
 
-![Region vÃ  budget AWS](/TranKhanhTam_AWS_Template/images/5-Workshop/5.2-Prerequisites/aws_region.png)
-![Region vÃ  budget AWS](/TranKhanhTam_AWS_Template/images/5-Workshop/5.2-Prerequisites/iam.png)
-![Region vÃ  budget AWS](/TranKhanhTam_AWS_Template/images/5-Workshop/5.2-Prerequisites/pttt.png)
-
+![Region và budget AWS](/images/5-Workshop/5.2-Prerequisites/aws_region.png)
+![Region và budget AWS](/images/5-Workshop/5.2-Prerequisites/iam.png)
+![Region và budget AWS](/images/5-Workshop/5.2-Prerequisites/pttt.png)

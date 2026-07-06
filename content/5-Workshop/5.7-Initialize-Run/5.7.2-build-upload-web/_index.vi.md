@@ -1,27 +1,27 @@
-﻿---
-title : "Build vÃ  upload web frontend"
+---
+title : "Build và upload web frontend"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.7.2. </b> "
 ---
 
-#### Má»¥c tiÃªu
+#### Mục tiêu
 
-Build frontend vÃ  upload files sinh ra lÃªn frontend S3 bucket.
+Build frontend và upload files sinh ra lên frontend S3 bucket.
 
-#### CÃ¡ch A - AWS Console
+#### Cách A - AWS Console
 
-1. Build frontend trÃªn mÃ¡y local.
-2. Má»Ÿ **S3** vÃ  chá»n frontend bucket.
-3. Upload files tá»« `web/dist`.
-4. Kiá»ƒm tra cÃ³ `index.html` vÃ  `assets/`.
+1. Build frontend trên máy local.
+2. Mở **S3** và chọn frontend bucket.
+3. Upload files từ `web/dist`.
+4. Kiểm tra có `index.html` và `assets/`.
 
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
-![CloudFront behaviors](/TranKhanhTam_AWS_Template/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/create-s3-5.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-created.png)
+![CloudFront behaviors](/images/5-Workshop/5.6-Deploy-Application/5.6.3-cloudfront/cloudfront-web.png)
 
-#### CÃ¡ch B - Lá»‡nh / code deployment
+#### Cách B - Lệnh / code deployment
 
 ```powershell
 cd "D:\AWS\LabRuns\MedChainAI-CommandRun\Project_Hospital_AWS_P2TB"
@@ -30,7 +30,6 @@ $FrontendBucket = aws cloudformation describe-stacks --stack-name $StackName --r
 aws s3 sync .\web\dist "s3://$FrontendBucket" --profile $Profile
 ```
 
-#### Kiá»ƒm tra
+#### Kiểm tra
 
-S3 frontend bucket cáº§n cÃ³ `index.html` vÃ  assets Ä‘Ã£ build.
-
+S3 frontend bucket cần có `index.html` và assets đã build.
