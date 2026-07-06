@@ -25,7 +25,46 @@ Người dùng truy cập hệ thống bằng CloudFront distribution domain.
 
 ![Sơ đồ kiến trúc](/images/5-Workshop/5.3-Architecture/architecture-0.png)
 
-![Sơ đồ kiến trúc](/images/5-Workshop/5.3-Architecture/architecture-1.png)
+#### Luồng thực thi chính
+
+1. Người dùng gửi HTTPS request đến hệ thống thông qua CloudFront.
+
+2. CloudFront tải giao diện tĩnh (static UI) từ S3 Frontend Static Content để trả về cho người dùng.
+
+3. Khi frontend cần xử lý dữ liệu động, CloudFront sẽ forward API request đến API Gateway.
+
+4. API Gateway chuyển request đến Lambda Core để xử lý các nghiệp vụ hệ thống chung.
+
+5. API Gateway chuyển request đến Lambda Medical Data để xử lý các nghiệp vụ liên quan đến dữ liệu y tế.
+
+6. API Gateway chuyển request đến Lambda AI & Audit để xử lý chức năng AI hoặc ghi nhận kiểm toán.
+
+7. API Gateway chuyển request đến Lambda Payment and SMS để xử lý thanh toán hoặc gửi OTP/SMS.
+
+8. Lambda Core gọi KMS để mã hóa/giải mã dữ liệu khi cần.
+
+9. Lambda Core lấy secret / API key từ Secrets Manager để phục vụ xác thực hoặc tích hợp dịch vụ ngoài.
+
+10. Lambda Medical Data thực hiện lưu trữ / truy xuất hồ sơ, tài liệu, hình ảnh y tế trên S3.
+
+11. Lambda Medical Data thực hiện đọc / ghi dữ liệu nghiệp vụ trên DynamoDB.
+
+12. Lambda AI & Audit ghi audit hash / transaction lên Amazon Managed Blockchain.
+
+13. Lambda AI & Audit gọi Gemini API (Google) để thực hiện chức năng AI Assistant.
+
+14. Labda Payment and SMS đẩy background task vào SQS để xử lý bất đồng bộ.
+
+15. SQS kích hoạt Lambda Trigger để xử lý tác vụ trong hàng đợi.
+
+16. Lambda Trigger gửi yêu cầu publish OTP đến SNS.
+
+17. SNS gửi SMS OTP đến người dùng nhận OTP.
+
+18. Lambda Payment and SMS tạo payment request và gửi sang cổng thanh toán VNPay/MoMo.
+
+19. VNPay/MoMo gửi payment callback / IPN ngược về API Gateway để hệ thống xác nhận và cập nhật trạng thái thanh toán.
+
 #### Thứ tự phụ thuộc
 
 Thứ tự triển khai rất quan trọng vì một số tài nguyên cần output từ bước trước.
