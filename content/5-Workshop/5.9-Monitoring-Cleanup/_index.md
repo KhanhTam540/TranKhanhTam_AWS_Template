@@ -40,7 +40,6 @@ Check the following items:
 + AMB node is deleted after the blockchain evidence screenshot is captured if the lab is no longer needed.
 + Billing dashboard is reviewed after deployment.
 
-![Cost review](/images/5-Workshop/5.9-Monitoring-Cleanup/cost-review.png)
 
 #### Cleanup order
 
@@ -60,5 +59,3 @@ npx cdk destroy $StackName `
   --profile $Profile `
   --force
 ```
-
-![Delete stack](/images/5-Workshop/5.9-Monitoring-Cleanup/delete-stack.png)

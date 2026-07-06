@@ -40,7 +40,6 @@ Kiểm tra các mục sau:
 + AMB node được xóa sau khi đã chụp bằng chứng blockchain nếu không còn dùng lab.
 + Billing dashboard được kiểm tra sau khi deploy.
 
-![Cost review](/images/5-Workshop/5.9-Monitoring-Cleanup/cost-review.png)
 
 #### Thứ tự cleanup
 
@@ -60,5 +59,3 @@ npx cdk destroy $StackName `
   --profile $Profile `
   --force
 ```
-
-![Delete stack](/images/5-Workshop/5.9-Monitoring-Cleanup/delete-stack.png)

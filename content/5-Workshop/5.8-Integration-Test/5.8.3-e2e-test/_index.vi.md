@@ -19,7 +19,7 @@ Chạy toàn bộ luồng bệnh viện sau khi đã cấu hình các tích hợ
 5. Bệnh nhân thanh toán bằng VNPay Sandbox.
 6. Metadata ledger của hồ sơ bệnh án được sinh ra.
 
-![End-to-end result](/images/5-Workshop/5.8-Integration-Test/5.8.3-e2e-test/dk.png)
+![End-to-end result](/images/5-Workshop/5.8-Integration-Test/5.8.3-e2e-test/dkl.png)
 ![End-to-end result](/images/5-Workshop/5.8-Integration-Test/5.8.3-e2e-test/dkl_completed.png)
 ![End-to-end result](/images/5-Workshop/5.8-Integration-Test/5.8.3-e2e-test/lk.png)
 ![End-to-end result](/images/5-Workshop/5.8-Integration-Test/5.8.3-e2e-test/ttlk.png)
