@@ -1,6 +1,6 @@
 ---
 title: "Các events đã tham gia"
-date: 2024-01-01
+date: 2026-07-06
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
@@ -23,7 +23,7 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** FCAJ Community Day
 
-&emsp;**Thời gian:** 09:00 ngày 26/06/2026
+&emsp;**Thời gian:** 09:00 ngày 27/06/2026
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
