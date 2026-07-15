@@ -33,3 +33,6 @@ Thứ tự trong workshop được sắp xếp theo phụ thuộc thực tế: c
 7. [Khởi tạo và chạy ứng dụng](5.7-Initialize-Run/)
 8. [Cấu hình tích hợp và kiểm thử](5.8-Integration-Test/)
 9. [Monitoring, bảo mật, chi phí và cleanup](5.9-Monitoring-Cleanup/)
+
+#### Demo
+Đây là kết quả sau khi tôi thực sự hoàn thành dự án của mình: https://drive.google.com/drive/folders/1s8M2WMwgb5b--pwjSqwfjgqzejdAWm3d?usp=sharing
