@@ -33,3 +33,7 @@ The order in this workshop follows the real dependency order. You will prepare t
 7. [Initialize and run the application](5.7-Initialize-Run/)
 8. [Configure integrations and test](5.8-Integration-Test/)
 9. [Monitoring, security, cost, and cleanup](5.9-Monitoring-Cleanup/)
+
+10. #### Demo
+These are the results after I actually built my project: https://drive.google.com/drive/folders/1s8M2WMwgb5b--pwjSqwfjgqzejdAWm3d?usp=sharing
+
